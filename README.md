@@ -1,0 +1,2 @@
+# P2_GAETAN_SBAFFI
+projet 2 OCR cv
