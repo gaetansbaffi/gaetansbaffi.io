@@ -110,9 +110,17 @@ justify-content: center;
 
 
 /*!!!!!ASIDE!!!!!*/
+
+aside img
+{
+    border-radius: 50%;
+  height: 175px;
+   width: 175px;
+}
 aside header
 {
   text-align: center;
+
 }
 
 aside
