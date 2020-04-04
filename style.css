@@ -1,0 +1,26 @@
+p
+{
+   width: 200px;
+   text-align: center;        
+   margin: 0;
+   padding: 0;
+   line-height: 200px;
+   background-color: lightgrey;
+   border-radius: 50%;
+   border:2px black solid;
+   box-shadow: 10px 10px 20px black;
+}
+
+a
+{
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 1.3em;
+}
+
+a:hover
+{
+  text-decoration: 
+}
