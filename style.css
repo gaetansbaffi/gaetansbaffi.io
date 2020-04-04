@@ -193,7 +193,7 @@ section h1, section h2
 
 aside
 {
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   width: auto;
   margin: auto;
@@ -210,7 +210,7 @@ article
 {
   width: 100%;
   margin: auto;
-  text-align: center;
+  text-align: justify;
 }
 
 .contact
@@ -255,7 +255,7 @@ aside header
 .loisirs
 {
   width: 100%;
-margin: 10px;
+
 }
 
 .logos
@@ -267,14 +267,16 @@ margin: 10px;
 
 .categorie
 {
-  width: 45%;
-  height: 300px;
+  width: 100%;
+  height: auto;
 
 }
 
 .categorie p
 {
   text-align: center;
+margin: 5px auto;
+
 }
 
 
