@@ -34,7 +34,7 @@ section
 
 section header
 {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 }
 
 section header h1
@@ -63,7 +63,7 @@ section header h2
 article
 {
   width: 100%;
-  padding-top: 50px
+  padding-top: 60dpx
 }
 
 
@@ -104,6 +104,8 @@ width: 25%
 .job
 {
   line-height: 1.3em;
+
+padding-top: 25px;
 }
 
 .recommandations
@@ -173,7 +175,57 @@ margin-bottom: 50px;
 }
 
 
-/*!!!!responsive!!!!!*/
+/*!!!!responsive tablette!!!!!*/
+
+
+
+@media screen and (max-width: 1024px)
+
+{
+#bloc_page
+{
+  flex-direction: column-reverse;
+  width: auto;
+  margin: auto;
+  padding: auto;
+}
+
+section
+{
+width: auto;
+margin: 10px;
+}
+
+section h1, section h2
+{
+  text-align: center;
+}
+
+aside
+{
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+aside header
+{
+  width: 100%;
+}
+.categorie, .loisirs
+{
+  width: 33.3333%;
+margin-bottom: auto;
+margin-top: 20px;
+}
+
+
+
+}
+
+
+/*!!!!responsive telephone!!!!!*/
 
 @media screen and (max-width: 728px)
 {
@@ -288,8 +340,5 @@ margin: 5px auto;
 }
 
 
-
-
-}
 
 
