@@ -2,6 +2,36 @@
   display: flex;
 }
 
+
+
+
+/* kanit-regular - latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/kanit-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Kanit Regular'), local('Kanit-Regular'),
+       url('fonts/kanit-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/kanit-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/kanit-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/kanit-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/kanit-v5-latin-regular.svg#Kanit') format('svg'); /* Legacy iOS */
+}
+/* kanit-600 - latin */
+@font-face {
+  font-family: 'Kanit-600';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/kanit-v5-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Kanit SemiBold'), local('Kanit-SemiBold'),
+       url('fonts/kanit-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/kanit-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/kanit-v5-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('fonts/kanit-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/kanit-v5-latin-600.svg#Kanit') format('svg'); /* Legacy iOS */
+}
+
 #bloc_page
 {
   display: flex;
@@ -10,7 +40,13 @@
   text-align: justify;
   margin: auto;
   border:1px black solid;
-  font-family: arial;
+  font-family: 'Kanit';
+}
+
+.bold
+{
+  font-family: 'Kanit-600';
+  font-weight: bolder;
 }
 
 li
@@ -34,20 +70,22 @@ section
 
 section header
 {
-    padding-bottom: 60px;
+    padding-bottom: 75px;
 }
 
 section header h1
 {
   font-size: 3em;
-  font-family: Impact;
-
+  font-family: 'Kanit-600';
+  margin-bottom: 5px;
 }
 
 section header h2
 {
   font-size: 2em;
-  font-family: Impact;
+  font-family: 'Kanit-600';
+  margin-top: 5px;
+
 }
 
 .societe
@@ -63,7 +101,8 @@ section header h2
 article
 {
   width: 100%;
-  padding-top: 60dpx
+  padding-top: 30px;
+    border-top: 2px #FFB300 solid;
 }
 
 
@@ -78,34 +117,44 @@ section h1 i
   padding-right: 25px;
 }
 
-article
-{
-  border-top: 2px #FFB300 solid;
-}
 
 .date
 {
+width: 25%;
 display: flex;
+flex-wrap: nowrap;
 flex-direction: row;
-width: 25%
 }
 
 .date .fas
 {
-  margin: 18px 10px 0 0;
+  margin: 5px 10px 0 0;
+  width: 10%;
+  height: 100%;
+}
+
+.date p
+{
+  margin: 0;
 }
 
 .droite
 {
-  width: 70%;
   padding-left: 50px;
+  width: 70%;
+  margin-top: 0px;
+}
+
+.societe
+{
+  margin: 0;
 }
 
 .job
 {
   line-height: 1.3em;
-
-padding-top: 25px;
+  padding-top: 25px;
+  display: flex;
 }
 
 .recommandations
@@ -143,6 +192,7 @@ aside
   height: auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 
 }
 
@@ -156,8 +206,9 @@ aside h1
 
 .categorie p
 {
-  padding: 0 10%;
   text-align: justify;
+  padding: 0 10%;
+  margin: 0em;
 }
 
 .logos 
@@ -215,13 +266,14 @@ aside header
 }
 .categorie, .loisirs
 {
-  width: 33.3333%;
-margin-bottom: auto;
+  width: 33%;
 margin-top: 20px;
 }
 
-
-
+.categorie p
+{
+  text-align: center;
+    padding: 0;
 }
 
 
@@ -335,8 +387,7 @@ aside header
 .categorie p
 {
   text-align: center;
-margin: 5px auto;
-
+  padding: 0;
 }
 
 
