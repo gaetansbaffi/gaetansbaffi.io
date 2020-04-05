@@ -6,7 +6,7 @@
 {
   display: flex;
   flex-direction: row-reverse;
-  width: 90%;
+  width: 1170px;
   text-align: justify;
   margin: auto;
   border:1px black solid;
@@ -26,16 +26,22 @@ section
   display: flex;
   flex-direction: column;
   width: 65%;
-  margin: 50px;
+  margin:  0 50px;
   height: auto;
 }
 
 /*!!!!!header!!!!!*/
 
+section header
+{
+    padding-bottom: 100px;
+}
+
 section header h1
 {
   font-size: 3em;
   font-family: Impact;
+
 }
 
 section header h2
@@ -52,24 +58,22 @@ section header h2
 }
 /*!!!!!SECTION BODY!!!!!*/
 
-section h1 .fas
-{
-  padding-left: 15px;
-}
+
 
 article
 {
   width: 100%;
+  padding-top: 50px
 }
 
 
 section h1
 {
   text-transform: uppercase;
-  padding: 0px;
+  padding-left: 0px;
 }
 
-section i 
+section h1 i
 {
   padding-right: 25px;
 }
@@ -83,7 +87,12 @@ article
 {
 display: flex;
 flex-direction: row;
-width: 32%
+width: 25%
+}
+
+.date .fas
+{
+  margin: 18px 10px 0 0;
 }
 
 .droite
@@ -94,7 +103,7 @@ width: 32%
 
 .job
 {
-  line-height: 1em;
+  line-height: 1.3em;
 }
 
 .recommandations
@@ -128,7 +137,6 @@ aside header
 aside
 {
   width: 30%;
-  margin: 50px;
   background-color: #FFB300;
   height: auto;
   display: flex;
@@ -167,7 +175,7 @@ margin-bottom: 50px;
 
 /*!!!!responsive!!!!!*/
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 728px)
 {
 #bloc_page
 {
