@@ -12,11 +12,11 @@
   font-weight: 400;
   src: url('fonts/kanit-v5-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Kanit Regular'), local('Kanit-Regular'),
-       url('fonts/kanit-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/kanit-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/kanit-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('fonts/kanit-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/kanit-v5-latin-regular.svg#Kanit') format('svg'); /* Legacy iOS */
+  url('fonts/kanit-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('fonts/kanit-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('fonts/kanit-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('fonts/kanit-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('fonts/kanit-v5-latin-regular.svg#Kanit') format('svg'); /* Legacy iOS */
 }
 /* kanit-600 - latin */
 @font-face {
@@ -25,11 +25,11 @@
   font-weight: 600;
   src: url('fonts/kanit-v5-latin-600.eot'); /* IE9 Compat Modes */
   src: local('Kanit SemiBold'), local('Kanit-SemiBold'),
-       url('fonts/kanit-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/kanit-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/kanit-v5-latin-600.woff') format('woff'), /* Modern Browsers */
-       url('fonts/kanit-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/kanit-v5-latin-600.svg#Kanit') format('svg'); /* Legacy iOS */
+  url('fonts/kanit-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('fonts/kanit-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+  url('fonts/kanit-v5-latin-600.woff') format('woff'), /* Modern Browsers */
+  url('fonts/kanit-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('fonts/kanit-v5-latin-600.svg#Kanit') format('svg'); /* Legacy iOS */
 }
 
 #bloc_page
@@ -70,7 +70,7 @@ section
 
 section header
 {
-    padding-bottom: 75px;
+  padding-bottom: 75px;
 }
 
 section header h1
@@ -102,7 +102,7 @@ article
 {
   width: 100%;
   padding-top: 30px;
-    border-top: 2px #FFB300 solid;
+  border-top: 2px #FFB300 solid;
 }
 
 
@@ -120,10 +120,10 @@ section h1 i
 
 .date
 {
-width: 25%;
-display: flex;
-flex-wrap: nowrap;
-flex-direction: row;
+  width: 25%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .date .fas
@@ -160,7 +160,7 @@ flex-direction: row;
 .recommandations
 {
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 .contact
@@ -173,11 +173,11 @@ justify-content: center;
 
 aside img
 {
-    border-radius: 50%;
+  border-radius: 50%;
   height: 175px;
-   width: 175px;
-   border: 1px black solid;
-   box-shadow: 5px 5px 10px black;
+  width: 175px;
+  border: 1px black solid;
+  box-shadow: 5px 5px 10px black;
 }
 aside header
 {
@@ -214,15 +214,22 @@ aside h1
 .logos 
 {
   display: flex;
-  justify-content: space-between;
-padding: 0 10%;
-flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 0px 5px;
 }
+
+.logos i
+{
+  height: 48px;
+  width: 48px;
+  text-align: center;
+}
+
 
 .loisirs
 {
-margin-top: auto;
-margin-bottom: 50px;
+  margin-top: auto;
 }
 
 
@@ -233,162 +240,162 @@ margin-bottom: 50px;
 @media screen and (max-width: 1024px)
 
 {
-#bloc_page
-{
-  flex-direction: column-reverse;
-  width: auto;
-  margin: auto;
-  padding: auto;
-}
+  #bloc_page
+  {
+    flex-direction: column-reverse;
+    width: auto;
+    margin: auto;
+    padding: auto;
+  }
 
-section
-{
-width: auto;
-margin: 10px;
-}
+  section
+  {
+    width: auto;
+    margin: 10px;
+  }
 
-section h1, section h2
-{
-  text-align: center;
-}
+  section h1, section h2
+  {
+    text-align: center;
+  }
 
-aside
-{
-width: 100%;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-}
+  aside
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-aside header
-{
-  width: 100%;
-}
-.categorie, .loisirs
-{
-  width: 33%;
-margin-top: 20px;
-}
+  aside header
+  {
+    width: 100%;
+  }
+  .categorie, .loisirs
+  {
+    width: 33.3333%;
+    margin-top: 20px;
+  }
 
-.categorie p
-{
-  text-align: center;
+  .categorie p
+  {
+    text-align: center;
     padding: 0;
-}
+  }
 
 
-/*!!!!responsive telephone!!!!!*/
+  /*!!!!responsive telephone!!!!!*/
 
-@media screen and (max-width: 728px)
-{
-#bloc_page
-{
-  flex-direction: column-reverse;
-  width: auto;
-  margin: auto;
-  padding: auto;
-}
-
-
-section
-{
-width: auto;
-margin: 10px;
-}
-
-section h1, section h2
-{
-  text-align: center;
-}
-
-/*!!!!aside!!!!!*/
-
-aside
-{
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: auto;
-  margin: auto;
-  justify-content: center;
-}
-
-article
-{
-  width: 100%;
-  margin: auto;
-}
-
-.recommandations
-{
-  width: 100%;
-  margin: auto;
-  text-align: justify;
-}
-
-.contact
-{
-  width: 40%;
-  text-align: center;
-}
-
-.date
-{
-padding-left: auto;
-width: 10%
-}
-
-.droite
-{
-margin: auto;
-}
+  @media screen and (max-width: 728px)
+  {
+    #bloc_page
+    {
+      flex-direction: column-reverse;
+      width: auto;
+      margin: auto;
+      padding: auto;
+    }
 
 
-.job
-{
-  display: flex;
-  justify-content: flex-start;
-}
+    section
+    {
+      width: auto;
+      margin: 10px;
+    }
 
-.date i
-{
-display: none;
-}
+    section h1, section h2
+    {
+      text-align: center;
+    }
+
+    /*!!!!aside!!!!!*/
+
+    aside
+    {
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: auto;
+      margin: auto;
+      justify-content: center;
+    }
+
+    article
+    {
+      width: 100%;
+      margin: auto;
+    }
+
+    .recommandations
+    {
+      width: 100%;
+      margin: auto;
+      text-align: justify;
+    }
+
+    .contact
+    {
+      width: 40%;
+      text-align: center;
+    }
+
+    .date
+    {
+      padding-left: auto;
+      width: 10%
+    }
+
+    .droite
+    {
+      margin: auto;
+    }
 
 
+    .job
+    {
+      display: flex;
+      justify-content: flex-start;
+    }
 
-aside header
-{
-  width: 100%;
-  margin: auto;
-}
+    .date i
+    {
+      display: none;
+    }
 
 
 
-.loisirs
-{
-  width: 100%;
+    aside header
+    {
+      width: 100%;
+      margin: auto;
+    }
 
-}
 
-.logos
-{
-  flex-direction: row;
-  display: flex;
-  text-align: center;
-}
 
-.categorie
-{
-  width: 100%;
-  height: auto;
+    .loisirs
+    {
+      width: 100%;
 
-}
+    }
 
-.categorie p
-{
-  text-align: center;
-  padding: 0;
-}
+    .logos
+    {
+      flex-direction: row;
+      display: flex;
+      text-align: center;
+    }
+
+    .categorie
+    {
+      width: 100%;
+      height: auto;
+
+    }
+
+    .categorie p
+    {
+      text-align: center;
+      padding: 0;
+    }
 
 
 
