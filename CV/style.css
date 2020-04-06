@@ -98,7 +98,7 @@ article
 {
   width: 100%;
   padding-top: 30px;
-  border-top: 2px #FFB300 solid;
+  border-top: 2px #ffba1a solid;
 }
 
 
@@ -184,7 +184,7 @@ aside header
 aside
 {
   width: 30%;
-  background-color: #FFB300;
+  background-color: #ffba1a;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -195,7 +195,7 @@ aside
 aside h1
 {
   background-color: black;
-  color: #FFB300;
+  color: #ffba1a;
   text-align: center;
   text-transform: uppercase;
 }
@@ -218,7 +218,7 @@ aside h1
 .logos i
 {
   text-align: center;
-  border: 3px black solid;
+  border: 1px black solid;
   border-radius: 50%;
   padding: 15px;
 }
@@ -255,7 +255,13 @@ aside h1
   section h1, section h2
   {
     text-align: center;
+    font-size: 2em;
   }
+
+section p
+{
+  font-size: 1em;
+}
 
   aside
   {
