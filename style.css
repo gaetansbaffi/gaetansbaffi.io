@@ -1,27 +1,24 @@
-p
-{
-   width: 200px;
-   text-align: center;        
-   margin: auto;
-   padding: auto;
-   line-height: 200px;
-   background-color: lightgrey;
-   border-radius: 50%;
-   border:2px black solid;
-   box-shadow: 10px 10px 20px black;
+p {
+	width: 200px;
+	text-align: center;
+	margin: auto;
+	padding: auto;
+	line-height: 200px;
+	background-color: lightgrey;
+	border-radius: 50%;
+	border: 2px black solid;
+	box-shadow: 10px 10px 20px black;
 }
 
-
-a
-{
-display: block;
-text-decoration: none;
-text-transform: uppercase;
-font-weight: bolder;
-font-size: 1.3em;
+a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 1.3em;
 }
 
 a:hover {
-color: blue;
-text-decoration: underline;
+	color: blue;
+	text-decoration: underline;
 }
