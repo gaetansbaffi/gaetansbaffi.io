@@ -1,9 +1,3 @@
-.job{
-  display: flex;
-}
-
-
-
 
 /* kanit-regular - latin */
 @font-face {
@@ -49,9 +43,9 @@
   font-weight: bolder;
 }
 
-li
-{
-  list-style: none;
+ul {
+    padding: 0;
+    list-style-type: none;
 }
 
 /*!!!!!SECTION!!!!!*/
@@ -94,6 +88,8 @@ section header h2
   font-weight: bold;
   font-size: 1.1em;
 }
+
+
 /*!!!!!SECTION BODY!!!!!*/
 
 
@@ -270,44 +266,34 @@ aside h1
     flex-wrap: wrap;
   }
 
+aside p 
+{
+  font-size: 1.1em;
+}
+
   aside header
   {
     width: 100%;
   }
-  .categorie,.loisirs
+  .categorie
   {
-    width: 33.3%;
-    margin-top: 20px;
-  }
-
-  .loisirs
-  {
-    width: 33.3%;
-    margin-top: 20px;
+    width: 50%;
+    margin-top: 25px;
   }
 
   .categorie p
   {
     text-align: center;
     padding: 0;
+    margin: 0px 10px;
   }
 
-.logos
-{
-  flex-direction: column;
-  text-align: center;
-  margin: 0 30%;
-  justify-content: space-between;
-}
+    .loisirs
+    {
+      width: 100%;
+          margin-top: 20px;
 
-.logos i
-{
-  text-align: center;
-  border: 3px black solid;
-  border-radius: 50%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
+    }
 
   /*!!!!responsive telephone!!!!!*/
 
@@ -402,12 +388,7 @@ aside h1
 
     }
 
-    .logos
-    {
-      flex-direction: row;
-      display: flex;
-      text-align: center;
-    }
+ 
 
 
     .categorie
