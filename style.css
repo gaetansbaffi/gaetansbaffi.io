@@ -1,9 +1,14 @@
+body {
+	display: flex;
+	justify-content: space-around;
+}
+
 p {
-	width: 200px;
+	width: 300px;
 	text-align: center;
 	margin: auto;
 	padding: auto;
-	line-height: 200px;
+	line-height: 300px;
 	background-color: lightgrey;
 	border-radius: 50%;
 	border: 2px black solid;
