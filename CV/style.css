@@ -97,7 +97,8 @@ section header h2
 article
 {
   width: 100%;
-  padding-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 30px;
   border-top: 2px #ffba1a solid;
 }
 
