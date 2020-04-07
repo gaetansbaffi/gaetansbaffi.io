@@ -9,11 +9,12 @@ header {
   background: #579c87;
   color: #579c87;
   text-align: center;
+  padding: 25px 0;
 }
 
 header img {
-  widows: 400px;
-  height: 80px;
+  widows: 200px;
+  height: 40px;
 }
 
 header h1 {
