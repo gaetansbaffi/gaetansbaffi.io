@@ -1,9 +1,21 @@
-header,
 footer,
 .soon {
 	background: $bg;
 	color: $text;
 	text-align: center;
+}
+
+header {
+	background: $bg;
+	color: $bg;
+	text-align: center;
+	img {
+		widows: 400px;
+		height: 80px;
+	}
+	h1 {
+		font-size: 0px;
+	}
 }
 
 header,
@@ -23,7 +35,7 @@ footer {
 	justify-content: space-between;
 	margin-top: 35px;
 	padding: 0;
-	position: fixed;
+	position: sticky;
 	bottom: 0;
 	p {
 		font-size: 1.5em;

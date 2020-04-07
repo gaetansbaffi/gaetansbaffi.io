@@ -1,9 +1,23 @@
-header,
 footer,
 .soon {
   background: #579c87;
   color: #fdcb46;
   text-align: center;
+}
+
+header {
+  background: #579c87;
+  color: #579c87;
+  text-align: center;
+}
+
+header img {
+  widows: 400px;
+  height: 80px;
+}
+
+header h1 {
+  font-size: 0px;
 }
 
 header,
@@ -27,7 +41,8 @@ footer {
           justify-content: space-between;
   margin-top: 35px;
   padding: 0;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   bottom: 0;
 }
 
