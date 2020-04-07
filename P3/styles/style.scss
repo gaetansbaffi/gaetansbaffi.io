@@ -37,9 +37,13 @@ main {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background: red;
 		margin: 25px;
 		width: 190px;
 		height: 250px;
+		img {
+			width: 190px;
+			height: 250px;
+			box-shadow: 3px 3px 10px lightgray;
+		}
 	}
 }

@@ -129,9 +129,15 @@ main section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: red;
   margin: 25px;
   width: 190px;
   height: 250px;
+}
+
+main section img {
+  width: 190px;
+  height: 250px;
+  -webkit-box-shadow: 3px 3px 10px lightgray;
+          box-shadow: 3px 3px 10px lightgray;
 }
 /*# sourceMappingURL=style.css.map */
