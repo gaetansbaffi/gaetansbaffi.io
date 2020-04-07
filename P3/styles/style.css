@@ -99,7 +99,7 @@ main {
   margin-bottom: 25px;
 }
 
-main .menu {
+main section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
