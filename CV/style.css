@@ -1,427 +1,349 @@
-
 /* kanit-regular - latin */
 @font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/kanit-v5-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Kanit Regular'), local('Kanit-Regular'),
-  url('fonts/kanit-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('fonts/kanit-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-  url('fonts/kanit-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
-  url('fonts/kanit-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('fonts/kanit-v5-latin-regular.svg#Kanit') format('svg'); /* Legacy iOS */
+	font-family: "Kanit";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/kanit-v5-latin-regular.eot"); /* IE9 Compat Modes */
+	src: local("Kanit Regular"), local("Kanit-Regular"),
+		url("fonts/kanit-v5-latin-regular.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */ url("fonts/kanit-v5-latin-regular.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("fonts/kanit-v5-latin-regular.woff")
+			format("woff"),
+		/* Modern Browsers */ url("fonts/kanit-v5-latin-regular.ttf")
+			format("truetype"),
+		/* Safari, Android, iOS */ url("fonts/kanit-v5-latin-regular.svg#Kanit")
+			format("svg"); /* Legacy iOS */
 }
 /* kanit-600 - latin */
 @font-face {
-  font-family: 'Kanit-600';
-  font-style: normal;
-  font-weight: 600;
-  src: url('fonts/kanit-v5-latin-600.eot'); /* IE9 Compat Modes */
-  src: local('Kanit SemiBold'), local('Kanit-SemiBold'),
-  url('fonts/kanit-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('fonts/kanit-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-  url('fonts/kanit-v5-latin-600.woff') format('woff'), /* Modern Browsers */
-  url('fonts/kanit-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('fonts/kanit-v5-latin-600.svg#Kanit') format('svg'); /* Legacy iOS */
+	font-family: "Kanit-600";
+	font-style: normal;
+	font-weight: 600;
+	src: url("fonts/kanit-v5-latin-600.eot"); /* IE9 Compat Modes */
+	src: local("Kanit SemiBold"), local("Kanit-SemiBold"),
+		url("fonts/kanit-v5-latin-600.eot?#iefix") format("embedded-opentype"),
+		/* IE6-IE8 */ url("fonts/kanit-v5-latin-600.woff2") format("woff2"),
+		/* Super Modern Browsers */ url("fonts/kanit-v5-latin-600.woff")
+			format("woff"),
+		/* Modern Browsers */ url("fonts/kanit-v5-latin-600.ttf") format("truetype"),
+		/* Safari, Android, iOS */ url("fonts/kanit-v5-latin-600.svg#Kanit")
+			format("svg"); /* Legacy iOS */
 }
 
-#bloc_page
-{
-  display: flex;
-  flex-direction: row-reverse;
-  width: 1170px;
-  text-align: justify;
-  margin: auto;
-  border:1px black solid;
-  font-family: 'Kanit';
+#bloc_page {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 1170px;
+	text-align: justify;
+	margin: auto;
+	border: 1px black solid;
+	font-family: "Kanit";
 }
 
-.bold
-{
-  font-family: 'Kanit-600';
-  font-weight: bolder;
+.bold {
+	font-family: "Kanit-600";
+	font-weight: bolder;
 }
 
 ul {
-    padding: 0;
-    list-style-type: none;
+	padding: 0;
+	list-style-type: none;
 }
 
 /*!!!!!SECTION!!!!!*/
 
-
-section
-{
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  margin:  0 50px;
-  height: auto;
+section {
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+	margin: 0 50px;
+	height: auto;
 }
 
 /*!!!!!header!!!!!*/
 
-section header
-{
-  padding-bottom: 75px;
+section header {
+	padding-bottom: 75px;
 }
 
-section header h1
-{
-  font-size: 3em;
-  font-family: 'Kanit-600';
-  margin-bottom: 5px;
-  color: #ffba1a;
+section header h1 {
+	font-size: 3em;
+	font-family: "Kanit-600";
+	margin-bottom: 5px;
+	color: #ffba1a;
 }
 
-section header h2
-{
-  font-size: 2em;
-  font-family: 'Kanit-600';
-  margin-top: 5px;
-  border-bottom: #ffba1a solid;
-
+section header h2 {
+	font-size: 2em;
+	font-family: "Kanit-600";
+	margin-top: 5px;
+	border-bottom: #ffba1a solid;
 }
 
-.societe
-{
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.1em;
+.societe {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.1em;
 }
-
 
 /*!!!!!SECTION BODY!!!!!*/
 
-
-
-article
-{
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 30px;
-  border-top: 2px #ffba1a solid;
+article {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	border-top: 2px #ffba1a solid;
 }
 
-section i{
-  color: #ffba1a;
+section i {
+	color: #ffba1a;
 }
 
-
-section h1
-{
-  text-transform: uppercase;
-  padding-left: 0px;
+section h1 {
+	text-transform: uppercase;
+	padding-left: 0px;
 }
 
-section h1 i
-{
-  padding-right: 25px;
+section h1 i {
+	padding-right: 25px;
 }
 
-
-.date
-{
-  width: 25%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+.date {
+	width: 25%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
 }
 
-.date .fas
-{
-  margin: 5px 10px 0 0;
-  width: 10%;
-  height: 100%;
+.date .fas {
+	margin: 5px 10px 0 0;
+	width: 10%;
+	height: 100%;
 }
 
-.date p
-{
-  margin: 0;
+.date p {
+	margin: 0;
 }
 
-.droite
-{
-  padding-left: 50px;
-  width: 70%;
-  margin-top: 0px;
+.droite {
+	padding-left: 50px;
+	width: 70%;
+	margin-top: 0px;
 }
 
-.societe
-{
-  margin: 0;
+.societe {
+	margin: 0;
 }
 
-.job
-{
-  line-height: 1.3em;
-  padding-top: 25px;
-  display: flex;
+.job {
+	line-height: 1.3em;
+	padding-top: 25px;
+	display: flex;
 }
 
-.recommandations
-{
-  display: flex;
-  justify-content: center;
+.recommandations {
+	display: flex;
+	justify-content: center;
 }
 
-.contact
-{
-  margin: 15px 15px;
+.contact {
+	margin: 15px 15px;
 }
-
 
 /*!!!!!ASIDE!!!!!*/
 
-aside img
-{
-  border-radius: 50%;
-  height: 175px;
-  width: 175px;
-  border: 1px black solid;
-  box-shadow: 5px 5px 10px black;
+aside img {
+	border-radius: 50%;
+	height: 175px;
+	width: 175px;
+	border: 1px black solid;
+	box-shadow: 5px 5px 10px black;
 }
-aside header
-{
-  text-align: center;
-
+aside header {
+	text-align: center;
 }
 
-aside
-{
-  width: 30%;
-  background-color: #ffba1a;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-
+aside {
+	width: 30%;
+	background-color: #ffba1a;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
 }
 
-aside h1
-{
-  background-color: black;
-  color: #ffba1a;
-  text-align: center;
-  text-transform: uppercase;
+aside h1 {
+	background-color: black;
+	color: #ffba1a;
+	text-align: center;
+	text-transform: uppercase;
 }
 
-.categorie p
-{
-  text-align: justify;
-  padding: 0 10%;
-  margin: 0em;
+.categorie p {
+	text-align: justify;
+	padding: 0 10%;
+	margin: 0em;
 }
 
-.logos 
-{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  padding: 0px 5px;
+.logos {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	padding: 0px 5px;
 }
 
-.logos i
-{
-  text-align: center;
-  border: 1px black solid;
-  border-radius: 50%;
-  padding: 15px;
+.logos i {
+	text-align: center;
+	border: 1px black solid;
+	border-radius: 50%;
+	padding: 15px;
 }
 
-
-.loisirs
-{
-  margin-top: auto;
+.loisirs {
+	margin-top: auto;
 }
 
-.maj
-{
-  text-transform: uppercase;
+.maj {
+	text-transform: uppercase;
 }
 
 /*!!!!responsive tablette!!!!!*/
 
+@media screen and (max-width: 1024px) {
+	#bloc_page {
+		flex-direction: column-reverse;
+		width: auto;
+		margin: auto;
+		padding: auto;
+	}
 
+	section {
+		width: auto;
+		margin: 10px;
+	}
 
-@media screen and (max-width: 1024px)
+	section h1,
+	section h2 {
+		text-align: center;
+		font-size: 2em;
+	}
 
-{
+	section p {
+		font-size: 1em;
+	}
 
-  #bloc_page
-  {
-    flex-direction: column-reverse;
-    width: auto;
-    margin: auto;
-    padding: auto;
-  }
+	aside {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
 
-  section
-  {
-    width: auto;
-    margin: 10px;
-  }
+	aside p {
+		font-size: 1.1em;
+	}
 
-  section h1, section h2
-  {
-    text-align: center;
-    font-size: 2em;
-  }
+	aside header {
+		width: 100%;
+	}
+	.categorie {
+		width: 50%;
+		margin-top: 25px;
+	}
 
-section p
-{
-  font-size: 1em;
+	.categorie p {
+		text-align: center;
+		padding: 0;
+		margin: 0px 10px;
+	}
+
+	.loisirs {
+		width: 100%;
+		margin-top: 20px;
+	}
 }
+/*!!!!responsive telephone!!!!!*/
 
-  aside
-  {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+@media screen and (max-width: 728px) {
+	#bloc_page {
+		flex-direction: column-reverse;
+		width: auto;
+		margin: auto;
+		padding: auto;
+	}
 
-aside p 
-{
-  font-size: 1.1em;
+	section {
+		width: auto;
+		margin: 10px;
+	}
+
+	section h1,
+	section h2 {
+		text-align: center;
+	}
+
+	/*!!!!aside!!!!!*/
+
+	aside {
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: auto;
+		margin: auto;
+		justify-content: center;
+	}
+
+	article {
+		width: 100%;
+		margin: auto;
+	}
+
+	.recommandations {
+		width: 100%;
+		margin: auto;
+		text-align: justify;
+	}
+
+	.contact {
+		width: 40%;
+		text-align: center;
+		margin: 15px auto;
+	}
+
+	.date {
+		padding-left: auto;
+		width: 10%;
+	}
+
+	.droite {
+		margin: auto;
+	}
+
+	.job {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.date i {
+		display: none;
+	}
+
+	aside header {
+		width: 100%;
+		margin: auto;
+	}
+
+	.loisirs {
+		width: 100%;
+	}
+
+	.categorie {
+		width: 100%;
+		height: auto;
+	}
+
+	.categorie p {
+		text-align: center;
+		padding: 0;
+	}
 }
-
-  aside header
-  {
-    width: 100%;
-  }
-  .categorie
-  {
-    width: 50%;
-    margin-top: 25px;
-  }
-
-  .categorie p
-  {
-    text-align: center;
-    padding: 0;
-    margin: 0px 10px;
-  }
-
-    .loisirs
-    {
-      width: 100%;
-          margin-top: 20px;
-
-    }
-
-  /*!!!!responsive telephone!!!!!*/
-
-  @media screen and (max-width: 728px)
-  {
-    #bloc_page
-    {
-      flex-direction: column-reverse;
-      width: auto;
-      margin: auto;
-      padding: auto;
-    }
-
-
-    section
-    {
-      width: auto;
-      margin: 10px;
-    }
-
-    section h1, section h2
-    {
-      text-align: center;
-    }
-
-    /*!!!!aside!!!!!*/
-
-    aside
-    {
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: auto;
-      margin: auto;
-      justify-content: center;
-    }
-
-    article
-    {
-      width: 100%;
-      margin: auto;
-    }
-
-    .recommandations
-    {
-      width: 100%;
-      margin: auto;
-      text-align: justify;
-    }
-
-    .contact
-    {
-      width: 40%;
-      text-align: center;
-      margin: 15px auto;
-    }
-
-    .date
-    {
-      padding-left: auto;
-      width: 10%
-    }
-
-    .droite
-    {
-      margin: auto;
-    }
-
-
-    .job
-    {
-      display: flex;
-      justify-content: flex-start;
-    }
-
-    .date i
-    {
-      display: none;
-    }
-
-
-
-    aside header
-    {
-      width: 100%;
-      margin: auto;
-    }
-
-
-
-    .loisirs
-    {
-      width: 100%;
-
-    }
-
- 
-
-
-    .categorie
-    {
-      width: 100%;
-      height: auto;
-
-    }
-
-    .categorie p
-    {
-      text-align: center;
-      padding: 0;
-    }
-
-
-
-
