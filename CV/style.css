@@ -168,7 +168,7 @@ section h1 i
 
 .contact
 {
-  margin-right: 50px;
+  margin: 15px 15px;
 }
 
 
@@ -364,6 +364,7 @@ aside p
     {
       width: 40%;
       text-align: center;
+      margin: 15px auto;
     }
 
     .date
