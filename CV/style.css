@@ -72,6 +72,7 @@ section header h1
   font-size: 3em;
   font-family: 'Kanit-600';
   margin-bottom: 5px;
+  color: #ffba1a;
 }
 
 section header h2
@@ -79,6 +80,7 @@ section header h2
   font-size: 2em;
   font-family: 'Kanit-600';
   margin-top: 5px;
+  border-bottom: #ffba1a solid;
 
 }
 
@@ -100,6 +102,10 @@ article
   padding-top: 5px;
   padding-bottom: 30px;
   border-top: 2px #ffba1a solid;
+}
+
+section i{
+  color: #ffba1a;
 }
 
 
@@ -230,6 +236,10 @@ aside h1
   margin-top: auto;
 }
 
+.maj
+{
+  text-transform: uppercase;
+}
 
 /*!!!!responsive tablette!!!!!*/
 
