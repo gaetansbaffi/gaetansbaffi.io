@@ -29,6 +29,29 @@ footer {
 	border-radius: 10px;
 	font-size: 2em;
 	padding: 10px;
+	&:after {
+		display: inline-block;
+		animation: dotty steps(1, end) 3s infinite;
+		content: "";
+	}
+
+	@keyframes dotty {
+		0% {
+			content: "";
+		}
+		25% {
+			content: ".";
+		}
+		50% {
+			content: "..";
+		}
+		75% {
+			content: "...";
+		}
+		100% {
+			content: "";
+		}
+	}
 }
 
 .container_footer {
@@ -53,5 +76,13 @@ footer {
 		color: $text;
 		font-size: 1.2em;
 		margin: 0 15px;
+	}
+}
+
+.wiggle {
+	transition: steps(6 start 0.1s) 0.1s;
+	&:hover {
+		transform: translateX(10px), translateX(-20px), translateX(10px),
+			translateX(-20px);
 	}
 }
