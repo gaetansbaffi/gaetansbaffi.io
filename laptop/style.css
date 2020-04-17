@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+body button {
+  font-family: "Poppins", sans-serif;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .logo-container,
+body header .nav-links,
+body header .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .logo-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body header .logo-container .logo {
+  font-weight: 400;
+  margin: 5px;
+}
+
+body header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+body header nav .nav-links {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+body header nav .nav-links .nav-link {
+  text-decoration: none;
+  color: #5f5f79;
+  font-size: 18px;
+}
+
+body header .cart {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .presentation .intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, right top, from(#494964), to(#6f6f89));
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body .presentation .intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
+}
+
+body .presentation .cta {
+  padding: 50px 0 0 0;
+}
+
+body .presentation .cta .cta-select {
+  border: 2px solid #c36cbb;
+  background: transparent;
+  color: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+body .presentation .cta .cta-add {
+  background: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  color: white;
+  margin: 30px 0 0 30px;
+}
+
+body .presentation .introduction {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .presentation .cover {
+  height: 60vh;
+}
+
+body .presentation .cover img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-animation: drop 1.5s ease;
+          animation: drop 1.5s ease;
+  height: 100%;
+  -webkit-filter: drop-shadow(2px 5px 3px black);
+          filter: drop-shadow(2px 5px 3px black);
+}
+
+body .big-circle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.5;
+  height: 80%;
+}
+
+body .mid-circle {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  z-index: -1;
+  opacity: 0.4;
+  height: 60%;
+}
+
+body .small-circle {
+  position: absolute;
+  bottom: 0%;
+  left: 20%;
+  z-index: -1;
+}
+
+body .laptop-select {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  right: 15%;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  body .intro-text h1 {
+    font-size: 30px;
+  }
+  body .intro-text p {
+    font-size: 18px;
+  }
+  body .cta {
+    padding: 10px 0 0 0;
+  }
+  body .laptop-select {
+    bottom: 5%;
+    right: 50%;
+    width: 50%;
+    -webkit-transform: translate(50%, 5%);
+            transform: translate(50%, 5%);
+  }
+  body .cover img {
+    height: 30%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
