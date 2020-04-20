@@ -38,7 +38,7 @@
 		}
 
 		&.open {
-			transform: rotate(360deg);
+			transform: rotate(720deg);
 			background: transparent;
 
 			&::before {
@@ -73,7 +73,7 @@
 		height: 100vh;
 		overflow: hidden;
 		background: $primary-color;
-		list-style: none;
+		list-style-type: none;
 		padding-right: 1rem;
 		transform: translateY(-100%);
 		@include transition-ease;
@@ -83,7 +83,6 @@
 		}
 
 		&__item {
-			padding: 1rem;
 			transform: translateX(100vw);
 			@include transition-ease;
 
@@ -103,6 +102,7 @@
 			padding: 2rem 0;
 			font-weight: 300;
 			@include transition-ease;
+
 			&:hover {
 				color: $secondary-color;
 			}

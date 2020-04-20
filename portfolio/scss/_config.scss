@@ -12,7 +12,7 @@ $secondary-color: #ff652f;
 }
 
 @function set-text-color($color) {
-	@if lightness($color) > 40% {
+	@if (lightness($color) > 40%) {
 		@return #000;
 	} @else {
 		@return #fff;
