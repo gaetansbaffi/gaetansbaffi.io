@@ -347,7 +347,7 @@ main .row section img:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px 0;
+  padding-bottom: 60px;
 }
 
 .soon {
