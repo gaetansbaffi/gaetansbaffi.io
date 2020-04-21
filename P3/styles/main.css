@@ -132,93 +132,156 @@ body a {
   color: #fcca46;
 }
 
-@media screen and (max-height: 750px) {
-  .row section {
-    display: none;
-    max-width: 130px;
+@media screen and (max-height: 840px) {
+  body main .row section {
+    max-width: 120px;
   }
-  .row section img {
+  body .note {
+    margin-top: 20px;
+  }
+  body .menu {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 0 10px;
+    margin: 10px 20px 60px 20px;
+  }
+  body .menu .menu-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .menu .menu-header h1 {
+    padding: 0 5px;
+    margin: 0;
+    height: 25px;
+  }
+  body .menu .menu-header img {
+    width: 25px;
+  }
+  body .menu .dish-type {
+    max-width: none;
+    margin: 10px 0;
+  }
+  body .menu section {
+    max-width: 300px;
+  }
+  body .menu section .menu-sub-title {
     width: 100%;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .btn-container {
-    padding-bottom: 40px;
+  body .menu section .menu-sub-title img {
+    width: 100px;
+  }
+  body .menu h1,
+  body .menu h2,
+  body .menu h3 {
+    font-size: 1em;
+  }
+  body .menu p {
+    font-size: 0.8em;
+    text-align: justify;
+  }
+  body .menu .price {
+    margin-left: 5px;
+  }
+  body .menu .menu-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+  }
+  body .menu .menu-footer h1 {
+    padding: 0 5px;
+    margin: 0;
+    height: 25px;
+  }
+  body .menu .menu-footer img {
+    width: 25px;
   }
 }
 
-@media screen and (max-width: 400px) {
-  body {
-    height: 100vh;
-    font-size: 15px;
-  }
-  body header {
-    width: 100%;
-  }
-  body header img {
-    max-height: 200px;
-  }
-  body main section {
-    max-width: 130px;
-    margin: 20px;
-  }
-  body .soon {
-    max-width: 400px;
-    margin-bottom: 61.8px;
-  }
-  body footer {
-    height: 61.8px;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  body {
-    height: 100vh;
-    font-size: 20px;
-  }
-  body header {
-    width: 100%;
-  }
-  body header img {
-    max-height: 200px;
-  }
-  body main section {
-    max-width: 220px;
-    margin: 20px;
-  }
-  body .soon {
-    max-width: 400px;
-    margin-bottom: 61.8px;
-  }
-  body footer {
-    height: 61.8px;
-  }
-}
-
-@media screen and (min-width: 850px) {
-  body {
-    height: 100vh;
-    font-size: 20px;
-  }
-  body header {
-    width: 100%;
-  }
-  body header img {
-    max-height: 200px;
-  }
+@media screen and (max-height: 662px) and (min-width: 450px) {
   body main {
     width: 100%;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  body main section {
-    max-width: 210px;
-    margin: 20px;
+  body main .row {
+    width: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 60px;
+  }
+  body main .row section {
+    max-width: 120px;
+  }
+  body .btn-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body footer,
+  body .btn-container {
+    font-size: 12px;
+  }
+  body footer .legal,
+  body footer .contact {
+    padding: 0;
+    margin: 0 10px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  body main .row {
+    width: 50%;
+  }
+  body main .row section {
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body main .row {
+    width: 70%;
+  }
+  body main .row section {
+    max-width: 300px;
   }
   body .soon {
-    max-width: 400px;
-    margin-bottom: 61.8px;
+    font-size: 20px;
   }
-  body footer {
-    height: 61.8px;
+  body footer .legal,
+  body footer .contact {
+    font-size: 20px;
   }
 }
 
@@ -247,11 +310,10 @@ body a {
   -webkit-box-shadow: 0 0 10px lightgrey;
           box-shadow: 0 0 10px lightgrey;
   max-width: 1124px;
-  width: 100%;
 }
 
 .menu .menu-header img {
-  min-width: 25px;
+  min-width: 15px;
   max-width: 50px;
   margin-bottom: 0;
   background-color: #fde0dc;
@@ -281,6 +343,12 @@ body a {
   margin-bottom: 20px;
 }
 
+.menu section .menu-sub-title h2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .menu section .menu-sub-title img {
   height: 4.5px;
 }
@@ -295,7 +363,6 @@ body a {
 }
 
 .menu .menu-footer {
-  max-width: 160px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,14 +379,10 @@ body a {
   max-width: 20px;
 }
 
-.footer-container {
-  width: 100%;
-  padding-top: 100px;
-}
-
 header {
   background-color: #579c87;
   max-height: 150px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,6 +447,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1124px;
 }
 
 main p {
@@ -408,6 +472,7 @@ main .row section {
           box-shadow: 0px 0px 10px lightgrey;
   overflow: hidden;
   margin: 15px;
+  max-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,6 +489,7 @@ main .row section img {
   -webkit-transition: all 1s;
   transition: all 1s;
   width: 100%;
+  height: 100%;
 }
 
 main .row section img:hover {
@@ -434,6 +500,7 @@ main .row section img:hover {
 
 .btn-container {
   width: 100%;
+  max-width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,7 +555,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 40px;
+  max-height: 40px;
   position: fixed;
   bottom: 0;
   left: 0;

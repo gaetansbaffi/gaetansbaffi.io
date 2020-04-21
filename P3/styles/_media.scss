@@ -1,98 +1,154 @@
-@media screen and (max-height: 750px) {
-	.row {
-		section {
+//phone vertical
+
+@media screen and (max-height: 840px) {
+	body {
+		main {
+			.row {
+				section {
+					max-width: 120px;
+				}
+			}
+		}
+		.note {
+			margin-top: 20px;
+		}
+		.menu {
+			flex-grow: 1;
+			padding: 0 10px;
+			margin: 10px 20px 60px 20px;
+
+			.menu-header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				h1 {
+					padding: 0 5px;
+					margin: 0;
+					height: 25px;
+				}
+				img {
+					width: 25px;
+				}
+			}
+
+			.dish-type {
+				max-width: none;
+				margin: 10px 0;
+			}
+
+			section {
+				max-width: 300px;
+
+				.menu-sub-title {
+					width: 100%;
+					margin: 0;
+					justify-content: center;
+					img {
+						width: 100px;
+					}
+				}
+			}
+			h1,
+			h2,
+			h3 {
+				font-size: 1em;
+			}
+			p {
+				font-size: 0.8em;
+				text-align: justify;
+			}
+			.price {
+				margin-left: 5px;
+			}
+			.menu-footer {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				height: auto;
+				h1 {
+					padding: 0 5px;
+					margin: 0;
+					height: 25px;
+				}
+				img {
+					width: 25px;
+				}
+			}
+		}
+	}
+}
+//phone horizontal
+@media screen and (max-height: 662px) and (min-width: 450px) {
+	body {
+		main {
+			width: 100%;
+			flex-direction: row;
+			.row {
+				width: 50%;
+				flex-direction: row;
+				padding-bottom: 60px;
+				section {
+					max-width: 120px;
+				}
+			}
+		}
+		.btn-container {
 			display: none;
-			max-width: 130px;
-			img {
-				width: 100%;
-			}
-		}
-	}
-	.btn-container {
-		padding-bottom: 40px;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	body {
-		height: 100vh;
-		font-size: 15px;
-
-		header {
-			width: 100%;
-			img {
-				max-height: 200px;
-			}
-		}
-		main {
-			section {
-				max-width: 130px;
-				margin: $margin;
-			}
-		}
-		.soon {
-			max-width: 400px;
-			margin-bottom: 61.8px;
-		}
-		footer {
-			height: 61.8px;
 		}
 	}
 }
-
-@media screen and (min-width: 767px) {
+//low width
+@media screen and (max-width: 360px) {
 	body {
-		height: 100vh;
-		font-size: 20px;
-
-		header {
-			width: 100%;
-			img {
-				max-height: 200px;
-			}
-		}
-		main {
-			section {
-				max-width: 220px;
-				margin: $margin;
-			}
-		}
-		.soon {
-			max-width: 400px;
-			margin-bottom: 61.8px;
+		footer,
+		.btn-container {
+			font-size: 12px;
 		}
 		footer {
-			height: 61.8px;
+			.legal,
+			.contact {
+				padding: 0;
+				margin: 0 10px;
+			}
 		}
 	}
 }
-
-@media screen and (min-width: 850px) {
+//laptop and pc
+@media screen and (min-width: 980px) {
 	body {
-		height: 100vh;
-		font-size: 20px;
-
-		header {
-			width: 100%;
-			img {
-				max-height: 200px;
-			}
-		}
 		main {
-			width: 100%;
-			flex-wrap: nowrap;
-			section {
-				max-width: 210px;
-
-				margin: $margin;
+			.row {
+				width: 50%;
+				section {
+					max-width: 200px;
+				}
 			}
 		}
+	}
+}
+//big screens
+@media screen and (min-width: 1200px) {
+	body {
+		main {
+			.row {
+				width: 70%;
+				section {
+					max-width: 300px;
+				}
+			}
+		}
+
 		.soon {
-			max-width: 400px;
-			margin-bottom: 61.8px;
+			font-size: 20px;
 		}
 		footer {
-			height: 61.8px;
+			.legal,
+			.contact {
+				font-size: 20px;
+			}
 		}
 	}
 }
