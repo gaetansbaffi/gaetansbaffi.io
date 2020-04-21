@@ -1,3 +1,18 @@
+@media screen and (max-height: 750px) {
+	.row {
+		section {
+			display: none;
+			max-width: 130px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.btn-container {
+		padding-bottom: 40px;
+	}
+}
+
 @media screen and (max-width: 400px) {
 	body {
 		height: 100vh;
@@ -11,7 +26,7 @@
 		}
 		main {
 			section {
-				max-width: 150px;
+				max-width: 130px;
 				margin: $margin;
 			}
 		}
@@ -78,17 +93,6 @@
 		}
 		footer {
 			height: 61.8px;
-		}
-	}
-}
-
-@media screen and (max-height: 750px) {
-	.row {
-		section {
-			max-width: 140px;
-			img {
-				width: 100%;
-			}
 		}
 	}
 }
