@@ -210,7 +210,7 @@ body a {
         flex-wrap: nowrap;
   }
   body main section {
-    max-width: 300px;
+    max-width: 210px;
     margin: 20px;
   }
   body .soon {
@@ -220,6 +220,101 @@ body a {
   body footer {
     height: 61.8px;
   }
+}
+
+.note {
+  font-size: 20px;
+  margin: 30px 0 0 0;
+}
+
+.menu {
+  font-size: 12px;
+  background-color: #fde0dc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 40px;
+  -webkit-box-shadow: 0 0 10px lightgrey;
+          box-shadow: 0 0 10px lightgrey;
+  max-width: 1124px;
+  width: 100%;
+}
+
+.menu .menu-header img {
+  min-width: 25px;
+  max-width: 50px;
+  margin-bottom: 0;
+  background-color: #fde0dc;
+}
+
+.menu .menu-header h1 {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.menu section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.menu section .menu-sub-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.menu section .menu-sub-title img {
+  height: 4.5px;
+}
+
+.menu section .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .menu-footer {
+  max-width: 160px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fde0dc;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.menu .menu-footer img {
+  max-width: 20px;
+}
+
+.footer-container {
+  width: 100%;
+  padding-top: 100px;
 }
 
 header {
@@ -266,6 +361,7 @@ header .logo-container a {
 
 header .logo-container a img {
   width: 40%;
+  max-height: 150px;
 }
 
 main {
