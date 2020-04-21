@@ -8,7 +8,7 @@
 
 header {
 	background-color: $bg;
-
+	max-height: 150px;
 	@include center;
 	.logo-container {
 		padding: $margin 0;
@@ -36,6 +36,7 @@ main {
 		font-size: 10px;
 		text-align: justify;
 		margin: $margin;
+		padding-bottom: 80px;
 	}
 	.row {
 		width: 100%;

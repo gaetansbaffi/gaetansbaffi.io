@@ -224,6 +224,7 @@ body a {
 
 header {
   background-color: #579c87;
+  max-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,6 +294,7 @@ main p {
   font-size: 10px;
   text-align: justify;
   margin: 20px;
+  padding-bottom: 80px;
 }
 
 main .row {
