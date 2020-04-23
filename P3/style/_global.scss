@@ -5,6 +5,23 @@
 		url("../fonts/Uniform\ Medium.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "caveatregular";
+	src: url("../fonts/caveat_regular_macroman/caveat-regular-webfont.eot");
+	src: url("../fonts/caveat_regular_macroman/caveat-regular-webfont.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/caveat_regular_macroman/caveat-regular-webfont.woff2")
+			format("woff2"),
+		url("../fonts/caveat_regular_macroman/caveat-regular-webfont.woff")
+			format("woff"),
+		url("../fonts/caveat_regular_macroman/caveat-regular-webfont.ttf")
+			format("truetype"),
+		url("../fonts/caveat_regular_macroman/caveat-regular-webfont.svg#caveatregular")
+			format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;

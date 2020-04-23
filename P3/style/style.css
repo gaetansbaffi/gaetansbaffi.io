@@ -3,6 +3,14 @@
   src: url("../fonts/Uniform Medium.ttf") format("woff"), url("../fonts/Uniform Medium.ttf") format("opentype"), url("../fonts/Uniform Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "caveatregular";
+  src: url("../fonts/caveat_regular_macroman/caveat-regular-webfont.eot");
+  src: url("../fonts/caveat_regular_macroman/caveat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/caveat_regular_macroman/caveat-regular-webfont.woff2") format("woff2"), url("../fonts/caveat_regular_macroman/caveat-regular-webfont.woff") format("woff"), url("../fonts/caveat_regular_macroman/caveat-regular-webfont.ttf") format("truetype"), url("../fonts/caveat_regular_macroman/caveat-regular-webfont.svg#caveatregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -260,7 +268,7 @@ body {
 
 .note {
   width: 100%;
-  font-size: calc(0.2vw + 0.5em);
+  font-size: calc(1vw + 0.5em);
   line-height: 2;
   margin-top: 1em;
   margin-bottom: 80px;
@@ -283,6 +291,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  font-family: "caveatregular", Arial, Helvetica, sans-serif;
+}
+
+.note__htitle {
+  font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
 }
 
 .note__header {
@@ -299,11 +312,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .note__header > img {
   height: 50px;
+  margin-bottom: -20px;
 }
 
 .note__menu {
@@ -381,6 +396,10 @@ body {
           justify-content: space-between;
 }
 
+.note__line :nth-child(2) {
+  font-weight: bold;
+}
+
 .note__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,6 +410,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: bold;
   margin-bottom: 1em;
 }
 
