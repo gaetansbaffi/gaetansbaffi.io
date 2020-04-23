@@ -18,6 +18,15 @@
 	.footer {
 		font-size: 25px;
 	}
+
+	.note {
+		&__menu {
+			width: 80%;
+			max-width: 1124px;
+		}
+		&__subtitle {
+		}
+	}
 }
 
 @media screen and (orientation: landscape) and (max-width: 1024px) {
