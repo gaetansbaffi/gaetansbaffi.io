@@ -20,10 +20,10 @@
 	}
 
 	.note {
-		&__menu {
-			width: 80%;
-			max-width: 1124px;
-		}
+		width: 80%;
+		max-width: 800px;
+		font-size: 17px;
+		flex-grow: 1;
 	}
 }
 
