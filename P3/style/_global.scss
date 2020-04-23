@@ -1,0 +1,22 @@
+@font-face {
+	font-family: "uniform-3-regular";
+	src: url("../fonts/Uniform\ Medium.ttf") format("woff"),
+		url("../fonts/Uniform\ Medium.ttf") format("opentype"),
+		url("../fonts/Uniform\ Medium.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
+	@include center();
+	flex-direction: column;
+}

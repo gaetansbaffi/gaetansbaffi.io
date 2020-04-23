@@ -1,0 +1,29 @@
+@keyframes wiggle {
+	0% {
+		transform: translateX(3px);
+	}
+	25% {
+		transform: translateX(-3px);
+	}
+	50% {
+		transform: translateX(3px);
+	}
+	75% {
+		transform: translateX(-3px);
+	}
+	100% {
+		transform: translateX(3px);
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,45 +1,7 @@
-@font-face {
-	font-family: "uniform-3-regular";
-	src: url("../fonts/Uniform\ Medium.ttf") format("woff"),
-		url("../fonts/Uniform\ Medium.ttf") format("opentype"),
-		url("../fonts/Uniform\ Medium.ttf") format("truetype");
-}
-$bg: #579c87;
-$text: #fcca46;
-$margin: 1em;
-$font-size: 0.5em;
-
-@mixin center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-@mixin coloring {
-	color: $text;
-	background: $bg;
-}
-
-@mixin size($height) {
-	height: $height;
-	width: $height * 0.7;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-html {
-	height: 100%;
-}
-
-body {
-	min-height: 100%;
-	font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
-	@include center();
-	flex-direction: column;
-}
+@import "variables";
+@import "mixin";
+@import "global";
+@import "animation";
 
 .header {
 	height: 80px;
@@ -55,13 +17,15 @@ body {
 
 .main {
 	@include center();
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-evenly;
 	width: 100%;
 	flex-grow: 1;
-	max-width: 1124px;
+	&__row {
+		@include center;
+	}
 	&__img {
-		@include size(200px);
+		@include size(180px);
 		transition: all 1s;
 		&:hover {
 			transform: scale(1.15);
@@ -69,8 +33,8 @@ body {
 		}
 	}
 	&__menu {
-		@include size(200px);
-		margin: 0 $margin;
+		@include size(180px);
+		margin: 0 $margin * 1.5;
 		margin-bottom: $margin * 1.2;
 		box-shadow: 0 0 10px lightgray;
 		overflow: hidden;
@@ -80,11 +44,10 @@ body {
 .soon {
 	@include coloring();
 	@include center();
-	width: 40%;
 	max-width: 300px;
 	padding: $margin * 0.75;
 	border-radius: 15px;
-	margin-bottom: 80px;
+	margin-bottom: 70px;
 	&__dot {
 		animation: blink 3s infinite both;
 		font-size: $font-size * 2.5;
@@ -94,18 +57,6 @@ body {
 	}
 	&__dot:nth-child(3) {
 		animation-delay: 1s;
-	}
-}
-
-@keyframes blink {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
 	}
 }
 
@@ -129,42 +80,4 @@ body {
 	}
 }
 
-@keyframes wiggle {
-	0% {
-		transform: translateX(3px);
-	}
-	25% {
-		transform: translateX(-3px);
-	}
-	50% {
-		transform: translateX(3px);
-	}
-	75% {
-		transform: translateX(-3px);
-	}
-	100% {
-		transform: translateX(3px);
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.header {
-		height: 120px;
-		&__img {
-			height: 80px;
-		}
-	}
-
-	.main {
-		width: 700px;
-	}
-	.main__menu,
-	.main__img {
-		@include size(300px);
-	}
-
-	.soon,
-	.footer {
-		font-size: 25px;
-	}
-}
+@import "media";

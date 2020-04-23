@@ -1,0 +1,15 @@
+@mixin center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin coloring {
+	color: $text;
+	background: $bg;
+}
+
+@mixin size($height) {
+	height: $height;
+	width: $height * 0.7;
+}
