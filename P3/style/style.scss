@@ -189,7 +189,7 @@
 			margin-bottom: -20px;
 		}
 	}
-	.chic__menutitle {
+	&__menutitle {
 		background: linear-gradient(to right, $orange, $pink, $blue);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -210,13 +210,13 @@
 		width: 85%;
 		margin-bottom: $margin * 2;
 	}
-	.chic--orange {
+	&--orange {
 		color: $orange;
 	}
-	.chic--pink {
+	&--pink {
 		color: $pink;
 	}
-	.chic--blue {
+	&--blue {
 		color: $blue;
 	}
 
@@ -343,7 +343,7 @@
 
 .palette {
 	width: 100%;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	line-height: 1.5;
 	margin-top: $margin;
 	margin-bottom: 65px;
@@ -368,11 +368,11 @@
 		}
 	}
 	&__menutitle {
-		background: linear-gradient(to right, $greend, $greenl);
+		background: linear-gradient(to left, $greenl, $greend 60%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		font-family: "OPTIJackson", Arial, Helvetica, sans-serif;
-		font-size: 4.5rem;
+		font-family: "kaushan_scriptregular", Arial, Helvetica, sans-serif;
+		font-size: 3rem;
 		margin-bottom: 2.5rem;
 		font-weight: lighter;
 		letter-spacing: 1px;

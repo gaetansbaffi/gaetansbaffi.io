@@ -46,6 +46,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "kaushan_scriptregular";
+  src: url("/fonts/kaushan/kaushanscript-regular-webfont.woff2") format("woff2"), url("/fonts/kaushan/kaushanscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -509,7 +516,7 @@ body {
   margin-bottom: -20px;
 }
 
-.chic .chic__menutitle {
+.chic__menutitle {
   background: -webkit-gradient(linear, left top, right top, from(#c67412), color-stop(#a46799), to(#6e4ccc));
   background: linear-gradient(to right, #c67412, #a46799, #6e4ccc);
   -webkit-background-clip: text;
@@ -547,15 +554,15 @@ body {
   margin-bottom: 2em;
 }
 
-.chic .chic--orange {
+.chic--orange {
   color: #c67412;
 }
 
-.chic .chic--pink {
+.chic--pink {
   color: #a46799;
 }
 
-.chic .chic--blue {
+.chic--blue {
   color: #6e4ccc;
 }
 
@@ -790,7 +797,7 @@ body {
 
 .palette {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   margin-top: 1em;
   margin-bottom: 65px;
@@ -844,12 +851,12 @@ body {
 }
 
 .palette__menutitle {
-  background: -webkit-gradient(linear, left top, right top, from(#5eae4c), to(#8ad362));
-  background: linear-gradient(to right, #5eae4c, #8ad362);
+  background: -webkit-gradient(linear, right top, left top, from(#b9ff94), color-stop(60%, #5eae4c));
+  background: linear-gradient(to left, #b9ff94, #5eae4c 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "OPTIJackson", Arial, Helvetica, sans-serif;
-  font-size: 4.5rem;
+  font-family: "kaushan_scriptregular", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
   margin-bottom: 2.5rem;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -950,7 +957,10 @@ body {
   height: 25px;
 }
 
-@media screen and (min-width: 768px) and (min-height: 768px) {
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 75%;
+  }
   .header {
     height: 120px;
   }
@@ -970,13 +980,27 @@ body {
     font-size: 2.5rem;
   }
   .note,
-  .chic {
+  .chic,
+  .palette,
+  .delice {
     width: 80%;
-    max-width: 800px;
+    max-width: 1124px;
     font-size: 1.7rem;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+  }
+  .note__subtitle,
+  .chic__subtitle,
+  .palette__subtitle,
+  .delice__subtitle {
+    font-size: 2rem;
+  }
+  .note__line,
+  .chic__line,
+  .palette__line,
+  .delice__line {
+    font-size: 1.5rem;
   }
 }
 

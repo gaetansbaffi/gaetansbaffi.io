@@ -1,4 +1,8 @@
-@media screen and (min-width: 768px) and (min-height: 768px) {
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 75%;
+	}
+
 	.header {
 		height: 120px;
 		&__img {
@@ -20,11 +24,19 @@
 	}
 
 	.note,
-	.chic {
+	.chic,
+	.palette,
+	.delice {
 		width: 80%;
-		max-width: 800px;
+		max-width: 1124px;
 		font-size: 1.7rem;
 		flex-grow: 1;
+		&__subtitle {
+			font-size: 2rem;
+		}
+		&__line {
+			font-size: 1.5rem;
+		}
 	}
 }
 
