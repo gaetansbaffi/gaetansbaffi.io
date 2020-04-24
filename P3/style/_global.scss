@@ -57,6 +57,17 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "OPTIJackson";
+	src: url("/fonts/optijackson/OPTIJackson.ttf.woff") format("woff"),
+		url("/fonts/optijackson/OPTIJackson.ttf.svg#OPTIJackson") format("svg"),
+		url("/fonts/optijackson/OPTIJackson.ttf.eot"),
+		url("/fonts/optijackson/OPTIJackson.ttf.eot?#iefix")
+			format("embedded-opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
