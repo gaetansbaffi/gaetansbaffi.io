@@ -18,15 +18,17 @@
 	&__header {
 		@include center;
 		flex-direction: column;
-
 		font-weight: bold;
-		font-size: 1.5rem;
+		font-size: 3rem;
+		width: 100%;
 		> img {
 			height: 50px;
 			margin-bottom: -20px;
 		}
 	}
 	&__menutitle {
+		width: 100%;
+		@include center;
 		background: linear-gradient(
 			to right,
 			$deliceblueh,
@@ -35,8 +37,8 @@
 		);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		font-family: "OPTIJackson", Arial, Helvetica, sans-serif;
-		font-size: 4.5rem;
+		font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
+		font-size: 2.5rem;
 		margin-bottom: 2.5rem;
 		font-weight: lighter;
 		letter-spacing: 1px;

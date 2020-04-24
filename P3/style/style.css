@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 @font-face {
   font-family: "uniform-3-regular";
   src: url("../fonts/Uniform Medium.ttf") format("woff"), url("../fonts/Uniform Medium.ttf") format("opentype"), url("../fonts/Uniform Medium.ttf") format("truetype");
@@ -684,7 +685,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  width: 100%;
 }
 
 .delice__header > img {
@@ -693,12 +695,22 @@ body {
 }
 
 .delice__menutitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: -webkit-gradient(linear, left top, right top, from(#0128dd), color-stop(#0470f3), to(#219df9));
   background: linear-gradient(to right, #0128dd, #0470f3, #219df9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "OPTIJackson", Arial, Helvetica, sans-serif;
-  font-size: 4.5rem;
+  font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
   margin-bottom: 2.5rem;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -1032,7 +1044,7 @@ body {
   }
   .palette__menutitle,
   .delice__menutitle {
-    font-size: 7rem;
+    font-size: 5rem;
     margin-bottom: 5rem;
   }
   .palette__subtitle,
