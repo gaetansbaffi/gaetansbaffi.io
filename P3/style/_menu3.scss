@@ -1,0 +1,87 @@
+//menu3
+
+.delice {
+	width: 100%;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin-top: $margin;
+	margin-bottom: 65px;
+	@include center;
+	justify-content: space-between;
+	flex-direction: column;
+	flex: 1;
+	font-family: "caveatregular", Arial, Helvetica, sans-serif;
+
+	&__htitle {
+		font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
+	}
+	&__header {
+		@include center;
+		flex-direction: column;
+
+		font-weight: bold;
+		font-size: 1.5rem;
+		> img {
+			height: 50px;
+			margin-bottom: -20px;
+		}
+	}
+	&__menutitle {
+		background: linear-gradient(
+			to right,
+			$deliceblueh,
+			$delicebluem,
+			$delicebluel
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-family: "OPTIJackson", Arial, Helvetica, sans-serif;
+		font-size: 4.5rem;
+		margin-bottom: 2.5rem;
+		font-weight: lighter;
+		letter-spacing: 1px;
+	}
+	&__menu {
+		background: #edefef;
+		@include center;
+		flex-direction: column;
+		box-shadow: 0 0 10px lightgrey;
+		flex-grow: 1;
+		width: 90%;
+	}
+
+	&__submenu {
+		width: 85%;
+		margin-bottom: $margin * 2;
+	}
+
+	&__headline {
+		@include center;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	&__break {
+		width: 28%;
+	}
+	&__subtitle {
+		@include center;
+		flex-direction: column;
+		font-size: 1.5rem;
+		text-align: center;
+		font-weight: lighter;
+	}
+	&__line {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__footer {
+		@include center;
+		font-weight: bold;
+		margin-bottom: $margin;
+		> img {
+			height: 25px;
+		}
+	}
+}

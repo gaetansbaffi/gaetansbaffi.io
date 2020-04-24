@@ -245,12 +245,13 @@ body {
   padding: 0.75em;
   border-radius: 15px;
   margin-bottom: 70px;
+  font-size: 1.5rem;
 }
 
 .soon__dot {
   -webkit-animation: blink 3s infinite both;
           animation: blink 3s infinite both;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .soon__dot:nth-child(2) {
@@ -282,6 +283,7 @@ body {
   height: 35px;
   position: fixed;
   bottom: 0;
+  font-size: 1.5rem;
 }
 
 .footer > * {
@@ -441,6 +443,7 @@ body {
 
 .note__line :nth-child(2) {
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .note__footer {
@@ -957,10 +960,7 @@ body {
   height: 25px;
 }
 
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 75%;
-  }
+@media screen and (min-width: 768px) and (min-height: 500px) {
   .header {
     height: 120px;
   }
@@ -968,7 +968,7 @@ body {
     height: 80px;
   }
   .main {
-    width: 700px;
+    max-width: 700px;
   }
   .main__menu,
   .main__img {
@@ -976,19 +976,33 @@ body {
     width: 210px;
   }
   .soon,
+  .soon > *,
   .footer {
     font-size: 2.5rem;
+  }
+  .soon {
+    margin-bottom: 90px;
+  }
+  .footer {
+    height: 60px;
   }
   .note,
   .chic,
   .palette,
   .delice {
     width: 80%;
-    max-width: 1124px;
+    max-width: 800px;
     font-size: 1.7rem;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    margin-bottom: 90px;
+  }
+  .note__menutitle,
+  .chic__menutitle,
+  .palette__menutitle,
+  .delice__menutitle {
+    font-size: 3.8rem;
   }
   .note__subtitle,
   .chic__subtitle,
@@ -1000,11 +1014,52 @@ body {
   .chic__line,
   .palette__line,
   .delice__line {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+  .note__line > :nth-child(2),
+  .chic__line > :nth-child(2),
+  .palette__line > :nth-child(2),
+  .delice__line > :nth-child(2) {
+    font-size: 2rem;
+  }
+  .note__footer > *,
+  .chic__footer > *,
+  .palette__footer > *,
+  .delice__footer > * {
+    font-size: 3rem;
+  }
+  .palette__menutitle,
+  .delice__menutitle {
+    font-size: 7rem;
+    margin-bottom: 5rem;
+  }
+  .palette__subtitle,
+  .delice__subtitle {
+    font-size: 2.8rem;
+  }
+  .palette__break,
+  .delice__break {
+    width: 25%;
+  }
+  .palette__line,
+  .delice__line {
+    font-size: 1.8rem;
+  }
+  .palette__line > :nth-child(2),
+  .delice__line > :nth-child(2) {
+    font-size: 2.4rem;
+  }
+  .palette__menutitle {
+    font-size: 5rem;
+    margin-bottom: 5rem;
   }
 }
 
 @media screen and (orientation: landscape) and (max-width: 1024px) {
+  html {
+    font-size: 80%;
+  }
   .main {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1014,10 +1069,19 @@ body {
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 100%;
+    margin-bottom: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main__row {
     width: 50%;
-    margin-bottom: 70px;
     padding: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
