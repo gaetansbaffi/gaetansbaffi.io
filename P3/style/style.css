@@ -11,6 +11,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ogiremaregular";
+  src: url("/fonts/Nouveau dossier/ogirema-webfont.woff2") format("woff2"), url("/fonts/Nouveau dossier/ogirema-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ogiremabold";
+  src: url("/fonts/Nouveau dossier/ogiremabold-webfont.woff2") format("woff2"), url("/fonts/Nouveau dossier/ogiremabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ogiremaitalic";
+  src: url("/fonts/Nouveau dossier/ogiremaitalic-webfont.woff2") format("woff2"), url("/fonts/Nouveau dossier/ogiremaitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "croissant_oneregular";
+  src: url("/fonts/Nouveau dossier/croissantone-regular-webfont.woff2") format("woff2"), url("/fonts/Nouveau dossier/croissantone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +46,7 @@
 
 html {
   height: 100%;
+  font-size: 62.5%;
 }
 
 body {
@@ -207,7 +236,7 @@ body {
 .soon__dot {
   -webkit-animation: blink 3s infinite both;
           animation: blink 3s infinite both;
-  font-size: calc(1vw + 0.5em);
+  font-size: 1rem;
 }
 
 .soon__dot:nth-child(2) {
@@ -268,7 +297,7 @@ body {
 
 .note {
   width: 100%;
-  font-size: calc(1vw + 0.5em);
+  font-size: 1rem;
   line-height: 2;
   margin-top: 1em;
   margin-bottom: 65px;
@@ -313,7 +342,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .note__header > img {
@@ -383,7 +412,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: calc(0.5vw + 1em);
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -418,6 +447,178 @@ body {
   height: 25px;
 }
 
+.chic {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 2;
+  margin-top: 1em;
+  margin-bottom: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "ogiremaregular";
+}
+
+.chic__htitle {
+  font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
+}
+
+.chic__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.chic__header > img {
+  height: 50px;
+  margin-bottom: -20px;
+}
+
+.chic .chic__menutitle {
+  background: -webkit-gradient(linear, left top, right top, from(#c67412), color-stop(#a46799), to(#6e4ccc));
+  background: linear-gradient(to right, #c67412, #a46799, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "croissant_oneregular";
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+
+.chic__menu {
+  background: #fff5fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 10px lightgrey;
+          box-shadow: 0 0 10px lightgrey;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 90%;
+}
+
+.chic__submenu {
+  width: 85%;
+  margin-bottom: 2em;
+}
+
+.chic .chic--orange {
+  color: #c67412;
+}
+
+.chic .chic--pink {
+  color: #a46799;
+}
+
+.chic .chic--blue {
+  color: #6e4ccc;
+}
+
+.chic__headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.chic__break {
+  width: 25%;
+}
+
+.chic__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chic__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chic__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.chic__footer > img {
+  height: 25px;
+}
+
 @media screen and (min-width: 768px) and (min-height: 768px) {
   .header {
     height: 120px;
@@ -435,12 +636,13 @@ body {
   }
   .soon,
   .footer {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
-  .note {
+  .note,
+  .chic {
     width: 80%;
     max-width: 800px;
-    font-size: 17px;
+    font-size: 1.7rem;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;

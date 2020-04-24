@@ -22,6 +22,41 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "ogiremaregular";
+	src: url("/fonts/Nouveau\ dossier/ogirema-webfont.woff2") format("woff2"),
+		url("/fonts/Nouveau\ dossier/ogirema-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ogiremabold";
+	src: url("/fonts/Nouveau\ dossier/ogiremabold-webfont.woff2") format("woff2"),
+		url("/fonts/Nouveau\ dossier/ogiremabold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ogiremaitalic";
+	src: url("/fonts/Nouveau\ dossier/ogiremaitalic-webfont.woff2")
+			format("woff2"),
+		url("/fonts/Nouveau\ dossier/ogiremaitalic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "croissant_oneregular";
+	src: url("/fonts/Nouveau\ dossier/croissantone-regular-webfont.woff2")
+			format("woff2"),
+		url("/fonts/Nouveau\ dossier/croissantone-regular-webfont.woff")
+			format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -29,6 +64,7 @@
 
 html {
 	height: 100%;
+	font-size: 62.5%;
 }
 
 body {
