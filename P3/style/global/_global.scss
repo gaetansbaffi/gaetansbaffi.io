@@ -10,16 +10,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
 @font-face {
 	font-family: "caveatregular";
-	src: url("../fonts/caveat_regular_macroman/caveat-regular-webfont.eot");
-	src: url("../fonts/caveat_regular_macroman/caveat-regular-webfont.eot?#iefix")
+	src: url("../../fonts/caveat_regular_macroman/caveat-regular-webfont.eot");
+	src: url("../../fonts/caveat_regular_macroman/caveat-regular-webfont.eot?#iefix")
 			format("embedded-opentype"),
-		url("../fonts/caveat_regular_macroman/caveat-regular-webfont.woff2")
+		url("../../fonts/caveat_regular_macroman/caveat-regular-webfont.woff2")
 			format("woff2"),
-		url("../fonts/caveat_regular_macroman/caveat-regular-webfont.woff")
+		url("../../fonts/caveat_regular_macroman/caveat-regular-webfont.woff")
 			format("woff"),
-		url("../fonts/caveat_regular_macroman/caveat-regular-webfont.ttf")
+		url("../../fonts/caveat_regular_macroman/caveat-regular-webfont.ttf")
 			format("truetype"),
-		url("../fonts/caveat_regular_macroman/caveat-regular-webfont.svg#caveatregular")
+		url("../../fonts/caveat_regular_macroman/caveat-regular-webfont.svg#caveatregular")
 			format("svg");
 	font-weight: normal;
 	font-style: normal;
@@ -27,34 +27,36 @@
 
 @font-face {
 	font-family: "ogiremaregular";
-	src: url("/fonts/Nouveau\ dossier/ogirema-webfont.woff2") format("woff2"),
-		url("/fonts/Nouveau\ dossier/ogirema-webfont.woff") format("woff");
+	src: url("../../fonts/Nouveau\ dossier/ogirema-webfont.woff2") format("woff2"),
+		url("../../fonts/Nouveau\ dossier/ogirema-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "ogiremabold";
-	src: url("/fonts/Nouveau\ dossier/ogiremabold-webfont.woff2") format("woff2"),
-		url("/fonts/Nouveau\ dossier/ogiremabold-webfont.woff") format("woff");
+	src: url("../../fonts/Nouveau\ dossier/ogiremabold-webfont.woff2")
+			format("woff2"),
+		url("../../fonts/Nouveau\ dossier/ogiremabold-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "ogiremaitalic";
-	src: url("/fonts/Nouveau\ dossier/ogiremaitalic-webfont.woff2")
+	src: url("../../fonts/Nouveau\ dossier/ogiremaitalic-webfont.woff2")
 			format("woff2"),
-		url("/fonts/Nouveau\ dossier/ogiremaitalic-webfont.woff") format("woff");
+		url("../../fonts/Nouveau\ dossier/ogiremaitalic-webfont.woff")
+			format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "croissant_oneregular";
-	src: url("/fonts/Nouveau\ dossier/croissantone-regular-webfont.woff2")
+	src: url("../../fonts/Nouveau\ dossier/croissantone-regular-webfont.woff2")
 			format("woff2"),
-		url("/fonts/Nouveau\ dossier/croissantone-regular-webfont.woff")
+		url("../../fonts/Nouveau\ dossier/croissantone-regular-webfont.woff")
 			format("woff");
 	font-weight: normal;
 	font-style: normal;
@@ -62,10 +64,10 @@
 
 @font-face {
 	font-family: "OPTIJackson";
-	src: url("/fonts/optijackson/OPTIJackson.ttf.woff") format("woff"),
-		url("/fonts/optijackson/OPTIJackson.ttf.svg#OPTIJackson") format("svg"),
-		url("/fonts/optijackson/OPTIJackson.ttf.eot"),
-		url("/fonts/optijackson/OPTIJackson.ttf.eot?#iefix")
+	src: url("../../fonts/optijackson/OPTIJackson.ttf.woff") format("woff"),
+		url("../../fonts/optijackson/OPTIJackson.ttf.svg#OPTIJackson") format("svg"),
+		url("../../fonts/optijackson/OPTIJackson.ttf.eot"),
+		url("../../fonts/optijackson/OPTIJackson.ttf.eot?#iefix")
 			format("embedded-opentype");
 	font-weight: normal;
 	font-style: normal;
@@ -73,8 +75,9 @@
 
 @font-face {
 	font-family: "kaushan_scriptregular";
-	src: url("/fonts/kaushan/kaushanscript-regular-webfont.woff2") format("woff2"),
-		url("/fonts/kaushan/kaushanscript-regular-webfont.woff") format("woff");
+	src: url("../../fonts/kaushan/kaushanscript-regular-webfont.woff2")
+			format("woff2"),
+		url("../../fonts/kaushan/kaushanscript-regular-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }

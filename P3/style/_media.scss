@@ -98,7 +98,7 @@
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1600px) {
 	html {
 		font-size: 100%;
 	}
@@ -116,7 +116,11 @@
 			margin: 0 $margin * 3;
 		}
 	}
-
+	.main__menu2 {
+		p {
+			font-size: 1.5rem;
+		}
+	}
 	.soon,
 	.soon > * {
 		font-size: 1.5rem;
