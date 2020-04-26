@@ -777,6 +777,7 @@ body {
   margin-bottom: 2.5rem;
   font-weight: lighter;
   letter-spacing: 1px;
+  padding: 15px;
 }
 
 .delice__menu {
@@ -854,9 +855,10 @@ body {
   width: 0;
   height: 3px;
   display: block;
-  margin-top: 25px;
+  bottom: 0;
   right: 0;
-  background: black;
+  background: -webkit-gradient(linear, left top, right top, from(#0128dd), color-stop(#0470f3), to(#219df9));
+  background: linear-gradient(to right, #0128dd, #0470f3, #219df9);
   transition: width 0.4s ease;
   -webkit-transition: width 0.4s ease;
 }
@@ -864,7 +866,8 @@ body {
 .delice__subtitle:hover:after {
   width: 100%;
   left: 0;
-  background: black;
+  background: -webkit-gradient(linear, left top, right top, from(#0128dd), color-stop(#0470f3), to(#219df9));
+  background: linear-gradient(to right, #0128dd, #0470f3, #219df9);
 }
 
 .delice__line {
@@ -1038,7 +1041,8 @@ body {
   display: block;
   margin-top: 25px;
   right: 0;
-  background: black;
+  background: -webkit-gradient(linear, right top, left top, from(#b9ff94), color-stop(60%, #5eae4c));
+  background: linear-gradient(to left, #b9ff94, #5eae4c 60%);
   transition: width 0.4s ease;
   -webkit-transition: width 0.4s ease;
 }
@@ -1046,7 +1050,8 @@ body {
 .palette__subtitle:hover:after {
   width: 100%;
   left: 0;
-  background: black;
+  background: -webkit-gradient(linear, right top, left top, from(#b9ff94), color-stop(60%, #5eae4c));
+  background: linear-gradient(to left, #b9ff94, #5eae4c 60%);
 }
 
 .palette__line {

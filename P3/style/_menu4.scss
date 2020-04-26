@@ -75,7 +75,7 @@
 			display: block;
 			margin-top: 25px;
 			right: 0;
-			background: black;
+			background: linear-gradient(to left, $greenl, $greend 60%);
 			transition: width 0.4s ease;
 			-webkit-transition: width 0.4s ease;
 		}
@@ -83,7 +83,7 @@
 		&:hover:after {
 			width: 100%;
 			left: 0;
-			background: black;
+			background: linear-gradient(to left, $greenl, $greend 60%);
 		}
 	}
 	&__line {

@@ -42,6 +42,7 @@
 		margin-bottom: 2.5rem;
 		font-weight: lighter;
 		letter-spacing: 1px;
+		padding: 15px;
 	}
 	&__menu {
 		background: #edefef;
@@ -73,15 +74,21 @@
 		text-align: center;
 		font-weight: lighter;
 		position: relative;
+
 		&:after {
 			content: "";
 			position: absolute;
 			width: 0;
 			height: 3px;
 			display: block;
-			margin-top: 25px;
+			bottom: 0;
 			right: 0;
-			background: black;
+			background: linear-gradient(
+				to right,
+				$deliceblueh,
+				$delicebluem,
+				$delicebluel
+			);
 			transition: width 0.4s ease;
 			-webkit-transition: width 0.4s ease;
 		}
@@ -89,7 +96,12 @@
 		&:hover:after {
 			width: 100%;
 			left: 0;
-			background: black;
+			background: linear-gradient(
+				to right,
+				$deliceblueh,
+				$delicebluem,
+				$delicebluel
+			);
 		}
 	}
 	&__line {
