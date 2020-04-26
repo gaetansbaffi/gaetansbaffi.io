@@ -462,7 +462,7 @@ body {
   width: 0;
   height: 3px;
   display: block;
-  margin-top: 25px;
+  bottom: 0;
   right: 0;
   background: black;
   transition: width 0.4s ease;
@@ -659,7 +659,7 @@ body {
   width: 0;
   height: 3px;
   display: block;
-  margin-top: 25px;
+  bottom: 0;
   right: 0;
   transition: width 0.4s ease;
   -webkit-transition: width 0.4s ease;
@@ -1036,10 +1036,10 @@ body {
 .palette__subtitle:after {
   content: "";
   position: absolute;
+  bottom: 0;
   width: 0;
   height: 3px;
   display: block;
-  margin-top: 25px;
   right: 0;
   background: -webkit-gradient(linear, right top, left top, from(#b9ff94), color-stop(60%, #5eae4c));
   background: linear-gradient(to left, #b9ff94, #5eae4c 60%);
