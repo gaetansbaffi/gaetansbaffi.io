@@ -1,16 +1,16 @@
-//menu3
+//menu2
 
-.delice {
+.chic {
 	width: 100%;
-	font-size: 1.2rem;
-	line-height: 1.5;
+	font-size: 1rem;
+	line-height: 2;
 	margin-top: $margin;
 	margin-bottom: 65px;
 	@include center;
 	justify-content: space-between;
 	flex-direction: column;
 	flex: 1;
-	font-family: "caveatregular", Arial, Helvetica, sans-serif;
+	font-family: "ogiremaregular";
 
 	&__htitle {
 		font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
@@ -18,34 +18,19 @@
 	&__header {
 		@include center;
 		flex-direction: column;
-		font-weight: bold;
-		font-size: 3rem;
-		width: 100%;
-		> img {
-			height: 50px;
-			margin-bottom: -20px;
-		}
+		font-size: 1.5rem;
+		flex-grow: 3;
 	}
 	&__menutitle {
-		width: 100%;
-		@include center;
-		background: linear-gradient(
-			to right,
-			$deliceblueh,
-			$delicebluem,
-			$delicebluel
-		);
+		background: linear-gradient(to right, $orange, $pink, $blue);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
-		font-size: 2.5rem;
-		margin-bottom: 2.5rem;
-		font-weight: lighter;
-		letter-spacing: 1px;
-		padding: 15px;
+		font-family: "croissant_oneregular";
+		font-weight: normal;
+		margin-bottom: 3rem;
 	}
 	&__menu {
-		background: #edefef;
+		background: #fff5fe;
 		@include center;
 		flex-direction: column;
 		box-shadow: 0 0 10px lightgrey;
@@ -56,6 +41,17 @@
 	&__submenu {
 		width: 85%;
 		margin-bottom: $margin * 2;
+		flex-grow: 1;
+		font-size: 1.2rem;
+	}
+	&--orange {
+		color: $orange;
+	}
+	&--pink {
+		color: $pink;
+	}
+	&--blue {
+		color: $blue;
 	}
 
 	&__headline {
@@ -65,16 +61,15 @@
 		margin-bottom: 1rem;
 	}
 	&__break {
-		width: 28%;
+		width: 25%;
 	}
 	&__subtitle {
 		@include center;
 		flex-direction: column;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		text-align: center;
-		font-weight: lighter;
+		font-weight: bold;
 		position: relative;
-
 		&:after {
 			content: "";
 			position: absolute;
@@ -83,25 +78,15 @@
 			display: block;
 			bottom: 0;
 			right: 0;
-			background: linear-gradient(
-				to right,
-				$deliceblueh,
-				$delicebluem,
-				$delicebluel
-			);
 			transition: width 0.4s ease;
 			-webkit-transition: width 0.4s ease;
+			background: linear-gradient(to right, $orange, $pink, $blue);
 		}
 
 		&:hover:after {
 			width: 100%;
 			left: 0;
-			background: linear-gradient(
-				to right,
-				$deliceblueh,
-				$delicebluem,
-				$delicebluel
-			);
+			background: linear-gradient(to right, $orange, $pink, $blue);
 		}
 	}
 	&__line {

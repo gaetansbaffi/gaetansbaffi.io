@@ -1,0 +1,188 @@
+.header {
+	height: 80px;
+	background: $bg;
+	text-align: center;
+	width: 100%;
+	@include center();
+	&__img {
+		height: 40px;
+	}
+}
+
+.main {
+	@include center();
+	flex-direction: column;
+	width: 100%;
+	flex-grow: 1;
+
+	a {
+		text-decoration: none;
+	}
+
+	&__row {
+		@include center;
+	}
+
+	&__menu {
+		@include size(220px);
+		margin: $margin;
+		box-shadow: 0 0 10px lightgray;
+		overflow: hidden;
+	}
+
+	&__menu1 {
+		background: #fcdfdb;
+		img {
+			width: 15%;
+		}
+		p {
+			margin-bottom: 10%;
+			font-size: 2rem;
+			font-family: "Devonshire", cursive, Arial, Helvetica, sans-serif;
+			color: black;
+		}
+		h2 {
+			text-transform: uppercase;
+			color: black;
+			font-size: 2rem;
+			font-family: "comic sans ms";
+			font-weight: lighter;
+			font-style: italic;
+		}
+	}
+
+	&__menu2 {
+		background: #fff5fe;
+
+		p {
+			margin-bottom: 10%;
+			font-size: 1.15rem;
+			font-family: "croissant_oneregular", Arial, Helvetica, sans-serif;
+			background: linear-gradient(to right, $orange, $pink, $blue);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		h2 {
+			color: $orange;
+			font-size: 2.5rem;
+			font-family: "Times New Roman", Times, serif;
+		}
+	}
+
+	&__menu3 {
+		background: #f9f9f9;
+
+		p {
+			margin-bottom: 10%;
+			font-size: 1.7rem;
+			font-family: "Dancing Script", cursive, cursive, Arial, Helvetica,
+				sans-serif;
+			background: linear-gradient(
+				to right,
+				$deliceblueh,
+				$delicebluem,
+				$delicebluel
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			padding: 5px;
+		}
+		h2 {
+			background: linear-gradient(
+				to right,
+				$deliceblueh,
+				$delicebluem,
+				$delicebluel
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 2.5rem;
+			font-weight: normal;
+			font-family: "Segoe print", Tahoma, Geneva, Verdana, sans-serif;
+		}
+	}
+
+	&__menu4 {
+		background: #fdfffd;
+
+		p {
+			margin-bottom: 10%;
+			font-size: 2rem;
+			font-family: "Kaushan Script", cursive, cursive, Arial, Helvetica,
+				sans-serif;
+			background: linear-gradient(to left, $greenl, $greend 60%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		h2 {
+			color: lighten($greend, 10%);
+			font-size: 2.5rem;
+			font-weight: normal;
+			font-family: "Segoe print", Tahoma, Geneva, Verdana, sans-serif;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		transition: all 1s;
+		&:hover {
+			transform: scale(1.15);
+			opacity: 0.7;
+		}
+	}
+}
+
+.soon {
+	@include coloring();
+	@include center();
+	max-width: 300px;
+	padding: $margin * 0.75;
+	border-radius: 15px;
+	margin-bottom: 70px;
+	font-size: 1.5rem;
+	&__dot {
+		animation: blink 2s infinite both ease-in-out;
+		font-size: $font-size;
+	}
+	&__dot:nth-child(2) {
+		animation-delay: 0.6s;
+	}
+	&__dot:nth-child(3) {
+		animation-delay: 1.2s;
+	}
+}
+
+.footer {
+	@include center();
+	@include coloring();
+	justify-content: space-between;
+	width: 100%;
+	height: 35px;
+	position: fixed;
+	bottom: 0;
+	font-size: 1.5rem;
+	> * {
+		margin: 0 10px;
+		&:hover {
+			animation: wiggle 0.3s;
+		}
+	}
+	&__link {
+		text-decoration: none;
+		@include coloring();
+	}
+}
+
+.legal {
+	font-size: 100%;
+	flex-grow: 1;
+	margin: $margin $margin 80px $margin;
+	line-height: 1.5em;
+	text-align: justify;
+	max-width: 1124px;
+}

@@ -1,9 +1,9 @@
-//menu4
+//menu1
 
-.palette {
+.note {
 	width: 100%;
-	font-size: 1.1rem;
-	line-height: 1.5;
+	font-size: 1rem;
+	line-height: 2;
 	margin-top: $margin;
 	margin-bottom: 65px;
 	@include center;
@@ -11,14 +11,13 @@
 	flex-direction: column;
 	flex: 1;
 	font-family: "caveatregular", Arial, Helvetica, sans-serif;
-
 	&__htitle {
 		font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
 	}
 	&__header {
 		@include center;
 		flex-direction: column;
-
+		flex-grow: 1;
 		font-weight: bold;
 		font-size: 1.5rem;
 		> img {
@@ -26,18 +25,9 @@
 			margin-bottom: -20px;
 		}
 	}
-	&__menutitle {
-		background: linear-gradient(to left, $greenl, $greend 60%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		font-family: "Kaushan Script", cursive, Arial, Helvetica, sans-serif;
-		font-size: 3rem;
-		margin-bottom: 2.5rem;
-		font-weight: lighter;
-		letter-spacing: 1px;
-	}
+
 	&__menu {
-		background: #fdfffd;
+		background: #fcdfdb;
 		@include center;
 		flex-direction: column;
 		box-shadow: 0 0 10px lightgrey;
@@ -48,34 +38,33 @@
 	&__submenu {
 		width: 85%;
 		margin-bottom: $margin * 2;
+		flex-grow: 1;
+		font-size: 1.2rem;
 	}
 
 	&__headline {
 		@include center;
 		justify-content: space-between;
 		width: 100%;
-		margin-bottom: 1rem;
 	}
 	&__break {
-		width: 28%;
+		width: 30%;
 	}
 	&__subtitle {
 		@include center;
+		position: relative;
 		flex-direction: column;
 		font-size: 1.5rem;
 		text-align: center;
-		font-weight: lighter;
-		position: relative;
-
 		&:after {
 			content: "";
 			position: absolute;
-			bottom: 0;
 			width: 0;
 			height: 3px;
 			display: block;
+			bottom: 0;
 			right: 0;
-			background: linear-gradient(to left, $greenl, $greend 60%);
+			background: black;
 			transition: width 0.4s ease;
 			-webkit-transition: width 0.4s ease;
 		}
@@ -83,12 +72,16 @@
 		&:hover:after {
 			width: 100%;
 			left: 0;
-			background: linear-gradient(to left, $greenl, $greend 60%);
+			background: black;
 		}
 	}
 	&__line {
 		display: flex;
 		justify-content: space-between;
+		:nth-child(2) {
+			font-weight: bold;
+			font-size: 1.2rem;
+		}
 	}
 
 	&__footer {
