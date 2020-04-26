@@ -15,6 +15,7 @@
 	justify-content: space-evenly;
 	width: 100%;
 	flex-grow: 1;
+	margin-top: $margin * 2;
 	&__row {
 		@include center;
 	}

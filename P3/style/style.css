@@ -87,22 +87,32 @@ body {
   0% {
     -webkit-transform: translateX(3px);
             transform: translateX(3px);
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
   }
   25% {
     -webkit-transform: translateX(-3px);
             transform: translateX(-3px);
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
   }
   50% {
     -webkit-transform: translateX(3px);
             transform: translateX(3px);
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
   }
   75% {
     -webkit-transform: translateX(-3px);
             transform: translateX(-3px);
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
   }
   100% {
     -webkit-transform: translateX(3px);
             transform: translateX(3px);
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
   }
 }
 
@@ -110,22 +120,32 @@ body {
   0% {
     -webkit-transform: translateX(3px);
             transform: translateX(3px);
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
   }
   25% {
     -webkit-transform: translateX(-3px);
             transform: translateX(-3px);
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
   }
   50% {
     -webkit-transform: translateX(3px);
             transform: translateX(3px);
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
   }
   75% {
     -webkit-transform: translateX(-3px);
             transform: translateX(-3px);
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
   }
   100% {
     -webkit-transform: translateX(3px);
             transform: translateX(3px);
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
   }
 }
 
@@ -194,6 +214,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin-top: 2em;
 }
 
 .main__row {
@@ -426,12 +447,32 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 1.5rem;
   text-align: center;
+}
+
+.note__subtitle:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 25px;
+  right: 0;
+  background: black;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.note__subtitle:hover:after {
+  width: 100%;
+  left: 0;
+  background: black;
 }
 
 .note__line {
@@ -609,6 +650,28 @@ body {
   font-size: 1.2rem;
   text-align: center;
   font-weight: bold;
+  position: relative;
+}
+
+.chic__subtitle:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 25px;
+  right: 0;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+  background: -webkit-gradient(linear, left top, right top, from(#c67412), color-stop(#a46799), to(#6e4ccc));
+  background: linear-gradient(to right, #c67412, #a46799, #6e4ccc);
+}
+
+.chic__subtitle:hover:after {
+  width: 100%;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#c67412), color-stop(#a46799), to(#6e4ccc));
+  background: linear-gradient(to right, #c67412, #a46799, #6e4ccc);
 }
 
 .chic__line {
@@ -782,6 +845,26 @@ body {
   font-size: 1.5rem;
   text-align: center;
   font-weight: lighter;
+  position: relative;
+}
+
+.delice__subtitle:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 25px;
+  right: 0;
+  background: black;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.delice__subtitle:hover:after {
+  width: 100%;
+  left: 0;
+  background: black;
 }
 
 .delice__line {
@@ -944,6 +1027,26 @@ body {
   font-size: 1.5rem;
   text-align: center;
   font-weight: lighter;
+  position: relative;
+}
+
+.palette__subtitle:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 25px;
+  right: 0;
+  background: black;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.palette__subtitle:hover:after {
+  width: 100%;
+  left: 0;
+  background: black;
 }
 
 .palette__line {
@@ -980,11 +1083,8 @@ body {
   .header__img {
     height: 80px;
   }
-  .main {
-    max-width: 700px;
-  }
-  .main__menu,
-  .main__img {
+  .main .main__menu,
+  .main .main__img {
     height: 300px;
     width: 210px;
   }

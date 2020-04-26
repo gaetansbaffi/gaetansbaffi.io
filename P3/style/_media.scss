@@ -7,11 +7,10 @@
 	}
 
 	.main {
-		max-width: 700px;
-	}
-	.main__menu,
-	.main__img {
-		@include size(300px);
+		.main__menu,
+		.main__img {
+			@include size(300px);
+		}
 	}
 
 	.soon,

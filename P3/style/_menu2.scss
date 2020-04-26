@@ -72,6 +72,25 @@
 		font-size: 1.2rem;
 		text-align: center;
 		font-weight: bold;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 3px;
+			display: block;
+			margin-top: 25px;
+			right: 0;
+			transition: width 0.4s ease;
+			-webkit-transition: width 0.4s ease;
+			background: linear-gradient(to right, $orange, $pink, $blue);
+		}
+
+		&:hover:after {
+			width: 100%;
+			left: 0;
+			background: linear-gradient(to right, $orange, $pink, $blue);
+		}
 	}
 	&__line {
 		display: flex;
