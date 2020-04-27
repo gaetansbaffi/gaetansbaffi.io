@@ -278,8 +278,8 @@ nav ul {
 
 #contact {
   min-height: 100vh;
-  background: url("/img/contact-mountain.png"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
-  background: url("/img/contact-mountain.png"), linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("/img/contact-mountain.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("/img/contact-mountain.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
