@@ -214,7 +214,7 @@ nav ul {
 
 .benefits-head {
   background: #343c44;
-  padding: 3rem;
+  padding: 10vh 3rem 3rem 3rem;
   min-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
