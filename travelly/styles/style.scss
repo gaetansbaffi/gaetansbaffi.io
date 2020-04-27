@@ -93,8 +93,8 @@ nav ul {
 	font-weight: normal;
 }
 
-.hero {
-	min-height: 90vh;
+#hero {
+	min-height: 100vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
 		url("../img/landing-page.jpg");
 	background-repeat: no-repeat;
@@ -313,6 +313,12 @@ footer ul {
 	}
 	.form-wrapper {
 		width: 100%;
+		flex-direction: column;
+	}
+	.name-form,
+	.email-form {
+		display: flex;
+		flex-direction: column;
 	}
 	footer {
 		text-align: center;
