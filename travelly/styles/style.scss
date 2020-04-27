@@ -80,6 +80,14 @@ nav {
 	flex-wrap: wrap;
 }
 
+nav li a {
+	cursor: pointer;
+	transition: all 0.4s;
+	&:hover {
+		color: #7db8ff;
+	}
+}
+
 nav ul {
 	display: flex;
 	list-style: none;

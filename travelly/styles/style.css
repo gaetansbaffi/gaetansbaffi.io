@@ -85,6 +85,16 @@ nav {
       flex-wrap: wrap;
 }
 
+nav li a {
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav li a:hover {
+  color: #7db8ff;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
