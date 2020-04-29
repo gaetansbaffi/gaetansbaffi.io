@@ -146,10 +146,16 @@ nav {
 
 .hero-elena {
 	width: 100%;
-	height: 100%;
+	object-fit: fill;
 	object-fit: cover;
+	position: relative;
 }
 
+.hero-elena {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
 .plant {
 	position: absolute;
 	bottom: 0;
@@ -264,6 +270,12 @@ nav {
 	height: 100%;
 	object-fit: cover;
 }
+.gallery1,
+.gallery3,
+.gallery4 {
+	max-height: 50vh;
+}
+
 .gallery1 {
 	grid-column: 1/3;
 }
@@ -271,6 +283,8 @@ nav {
 .gallery2 {
 	grid-column: 3/4;
 	grid-row: 1/3;
+	height: 100vh;
+	object-position: left;
 }
 
 .gallery-head {
@@ -291,6 +305,10 @@ nav {
 	min-height: 90vh;
 	display: flex;
 	flex-wrap: wrap;
+	background-image: url("./img/amandine/fog.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-position: bottom;
 }
 
 .form-wrapper {
@@ -365,6 +383,12 @@ footer ul {
 		padding: 5rem 3rem;
 	}
 
+	.hero-elena {
+		position: initial;
+		width: 100%;
+		height: 100%;
+	}
+
 	/* burger */
 
 	.burger {
@@ -435,13 +459,10 @@ footer ul {
 	.gallery img {
 		grid-row: auto;
 		grid-column: auto;
+		max-height: auto;
 	}
 
 	.gallery-head {
-		display: none;
-	}
-
-	.contact img {
 		display: none;
 	}
 
