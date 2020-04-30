@@ -370,7 +370,16 @@ footer ul {
 /* media */
 
 @media screen and (max-width: 842px) {
+	.main-head {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+		background: white;
+	}
+
 	.hero {
+		margin-top: 10vh;
 		width: 100%;
 	}
 
@@ -414,34 +423,24 @@ footer ul {
 		transition: transform 1s ease;
 	}
 
-	.menu-check {
-		position: absolute;
-		top: 50%;
-		right: 5%;
-		transform: translate(5%, -50%);
-		width: 5rem;
-		height: 5rem;
-		opacity: 0;
-		cursor: pointer;
-		z-index: 100;
-		display: block;
-	}
-
-	.menu-check:checked + .nav-links {
+	.nav-open {
 		transform: translate(-100%);
 	}
-	.menu-check:checked ~ .burger span {
+
+	.toggle .line1 {
+		transform: rotateZ(45deg) translateY(300%);
 		background: white;
 	}
-	.menu-check:checked ~ .burger span:nth-child(1) {
-		transform: rotateZ(45deg) translateY(300%);
-	}
-	.menu-check:checked ~ .burger span:nth-child(2) {
+
+	.toggle .line2 {
 		opacity: 0;
 	}
-	.menu-check:checked ~ .burger span:nth-child(3) {
+
+	.toggle .line3 {
 		transform: rotateZ(-45deg) translateY(-300%);
+		background: white;
 	}
+
 	/* about section */
 	.about-text div {
 		padding: 3rem;
