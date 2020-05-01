@@ -2,17 +2,17 @@
 
 .note {
 	width: 100%;
-	font-size: 1rem;
 	line-height: 2;
+	font-size: 1.6rem;
 	margin-top: $margin;
 	margin-bottom: 65px;
 	@include center;
-	justify-content: space-between;
 	flex-direction: column;
 	flex: 1;
-	font-family: "caveatregular", Arial, Helvetica, sans-serif;
+	font-family: "Kalam", cursive, Arial, Helvetica, sans-serif;
 	&__htitle {
 		font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
+		text-align: center;
 	}
 	&__header {
 		@include center;
@@ -20,26 +20,26 @@
 		flex-grow: 1;
 		font-weight: bold;
 		font-size: 1.5rem;
+		font-family: "Devonshire", cursive;
+		text-align: center;
 		> img {
 			height: 50px;
-			margin-bottom: -20px;
+			margin-bottom: -15px;
 		}
 	}
 
 	&__menu {
-		background: #fcdfdb;
 		@include center;
 		flex-direction: column;
+		background: #fcdfdb;
+		justify-content: flex-start;
 		box-shadow: 0 0 10px lightgrey;
-		flex-grow: 1;
 		width: 90%;
 	}
 
 	&__submenu {
 		width: 85%;
 		margin-bottom: $margin * 2;
-		flex-grow: 1;
-		font-size: 1.2rem;
 	}
 
 	&__headline {
@@ -54,7 +54,7 @@
 		@include center;
 		position: relative;
 		flex-direction: column;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		text-align: center;
 		&:after {
 			content: "";
@@ -80,7 +80,8 @@
 		justify-content: space-between;
 		:nth-child(2) {
 			font-weight: bold;
-			font-size: 1.2rem;
+			font-size: 1.8rem;
+			margin-left: 5px;
 		}
 	}
 
@@ -88,6 +89,7 @@
 		@include center;
 		font-weight: bold;
 		margin-bottom: $margin;
+		font-family: "Devonshire", cursive;
 		> img {
 			height: 25px;
 		}

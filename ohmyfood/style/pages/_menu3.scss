@@ -2,22 +2,22 @@
 
 .delice {
 	width: 100%;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	line-height: 1.5;
 	margin-top: $margin;
 	margin-bottom: 65px;
 	@include center;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-direction: column;
 	flex: 1;
-	font-family: "caveatregular", Arial, Helvetica, sans-serif;
+	font-family: "kalam", Arial, Helvetica, sans-serif;
 
 	&__htitle {
 		font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
+		text-align: center;
 	}
 	&__header {
 		@include center;
-		flex-grow: 2;
 	}
 	&__menutitle {
 		width: 100%;
@@ -32,25 +32,23 @@
 		-webkit-text-fill-color: transparent;
 		font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
 		font-size: 2.5rem;
-		margin-bottom: 2.5rem;
 		font-weight: lighter;
 		letter-spacing: 1px;
 		padding: 15px;
+		text-align: center;
 	}
 	&__menu {
 		background: #edefef;
 		@include center;
 		flex-direction: column;
 		box-shadow: 0 0 10px lightgrey;
-		flex-grow: 1;
+
 		width: 90%;
 	}
 
 	&__submenu {
 		width: 85%;
 		margin-bottom: $margin * 2;
-		flex-grow: 1;
-		font-size: 1.5rem;
 	}
 
 	&__headline {
@@ -65,7 +63,7 @@
 	&__subtitle {
 		@include center;
 		flex-direction: column;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		text-align: center;
 		font-weight: lighter;
 		position: relative;
@@ -102,6 +100,9 @@
 	&__line {
 		display: flex;
 		justify-content: space-between;
+		:nth-child(2) {
+			margin-left: 5px;
+		}
 	}
 
 	&__footer {

@@ -2,24 +2,24 @@
 
 .chic {
 	width: 100%;
-	font-size: 1rem;
+	font-size: 1.8rem;
 	line-height: 2;
 	margin-top: $margin;
 	margin-bottom: 65px;
 	@include center;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-direction: column;
 	flex: 1;
 	font-family: "ogiremaregular";
 
 	&__htitle {
 		font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
+		text-align: center;
 	}
 	&__header {
 		@include center;
 		flex-direction: column;
 		font-size: 1.5rem;
-		flex-grow: 3;
 	}
 	&__menutitle {
 		background: linear-gradient(to right, $orange, $pink, $blue);
@@ -28,21 +28,20 @@
 		font-family: "croissant_oneregular";
 		font-weight: normal;
 		margin-bottom: 3rem;
+		text-align: center;
 	}
 	&__menu {
 		background: #fff5fe;
 		@include center;
 		flex-direction: column;
 		box-shadow: 0 0 10px lightgrey;
-		flex-grow: 1;
+
 		width: 90%;
 	}
 
 	&__submenu {
 		width: 85%;
 		margin-bottom: $margin * 2;
-		flex-grow: 1;
-		font-size: 1.2rem;
 	}
 	&--orange {
 		color: $orange;
@@ -66,7 +65,7 @@
 	&__subtitle {
 		@include center;
 		flex-direction: column;
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 		text-align: center;
 		font-weight: bold;
 		position: relative;
@@ -92,6 +91,9 @@
 	&__line {
 		display: flex;
 		justify-content: space-between;
+		:nth-child(2) {
+			margin-left: 5px;
+		}
 	}
 
 	&__footer {

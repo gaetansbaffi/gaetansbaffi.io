@@ -2,23 +2,24 @@
 
 .palette {
 	width: 100%;
-	font-size: 1.1rem;
+	font-size: 1.6rem;
 	line-height: 1.5;
 	margin-top: $margin;
 	margin-bottom: 65px;
 	@include center;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-direction: column;
 	flex-grow: 1;
-	font-family: "caveatregular", Arial, Helvetica, sans-serif;
+	font-family: "Kalam", Arial, Helvetica, sans-serif;
 
 	&__htitle {
 		font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
+		text-align: center;
 	}
 
 	&__header {
 		@include center;
-		flex-grow: 5;
+		margin-top: 3rem;
 	}
 
 	&__menutitle {
@@ -26,24 +27,23 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		font-family: "Kaushan Script", cursive, Arial, Helvetica, sans-serif;
-		font-size: 3rem;
 		font-weight: lighter;
 		letter-spacing: 1px;
 		font-size: 2.5rem;
+		text-align: center;
 	}
 	&__menu {
 		background: #fdfffd;
 		@include center;
 		flex-direction: column;
 		box-shadow: 0 0 10px lightgrey;
-		flex-grow: 1;
+		margin-top: 30px;
 		width: 90%;
 	}
 
 	&__submenu {
 		width: 90%;
-		margin-bottom: $margin * 2;
-		flex-grow: 1;
+		margin: 2rem 0;
 	}
 
 	&__headline {
@@ -85,7 +85,9 @@
 	&__line {
 		display: flex;
 		justify-content: space-between;
-		font-size: 1.3rem;
+		:nth-child(2) {
+			margin-left: 5px;
+		}
 	}
 
 	&__footer {
