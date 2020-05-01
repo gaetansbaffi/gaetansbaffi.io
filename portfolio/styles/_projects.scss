@@ -1,3 +1,13 @@
+@mixin size-landscape($width) {
+	width: $width;
+	height: $width * 0.75;
+}
+
+@mixin size-portrait($height) {
+	height: $height * 0.75;
+	width: $height * 0.75 * 0.75;
+}
+
 .projects {
 	width: 90%;
 	margin: auto;
@@ -10,7 +20,16 @@
 	}
 }
 
+.landscape {
+	@include size-landscape(622px);
+}
+
+.portrait {
+	@include size-portrait(622px);
+}
+
 .travelly,
-.photo {
-	flex: 1 1 40rem;
+.photo,
+.ohmyfood {
+	flex: 1 1 50%;
 }

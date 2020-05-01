@@ -304,11 +304,22 @@ nav ul {
   margin: 5rem;
 }
 
+.landscape {
+  width: 622px;
+  height: 466.5px;
+}
+
+.portrait {
+  height: 466.5px;
+  width: 349.875px;
+}
+
 .travelly,
-.photo {
+.photo,
+.ohmyfood {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .form-section {
