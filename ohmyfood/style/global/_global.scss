@@ -109,8 +109,8 @@ a {
 }
 
 header h1 {
-	@include coloring;
-	font-size: 4rem;
+	color: $text;
+	font-size: 6.5rem;
 	text-transform: lowercase;
 	letter-spacing: -0.4rem;
 }
