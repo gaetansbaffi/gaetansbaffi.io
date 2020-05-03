@@ -570,7 +570,7 @@ body {
   width: 0;
   height: 3px;
   display: block;
-  bottom: 0;
+  bottom: 1.2rem;
   right: 0;
   background: #3d1319;
   transition: width 0.4s ease;
@@ -1217,7 +1217,7 @@ body {
   .delice {
     width: 80%;
     max-width: 1124px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1233,20 +1233,20 @@ body {
   .chic__subtitle,
   .palette__subtitle,
   .delice__subtitle {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .note__line,
   .chic__line,
   .palette__line,
   .delice__line {
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
   .note__line > :nth-child(2),
   .chic__line > :nth-child(2),
   .palette__line > :nth-child(2),
   .delice__line > :nth-child(2) {
-    font-size: 2rem;
+    font-size: 1.55rem;
   }
   .note__footer > *,
   .chic__footer > *,
@@ -1261,7 +1261,7 @@ body {
   }
   .palette__subtitle,
   .delice__subtitle {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
   .palette__break,
   .delice__break {
@@ -1269,11 +1269,11 @@ body {
   }
   .palette__line,
   .delice__line {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .palette__line > :nth-child(2),
   .delice__line > :nth-child(2) {
-    font-size: 2.4rem;
+    font-size: 1.55rem;
   }
   .palette__menutitle {
     font-size: 5rem;
