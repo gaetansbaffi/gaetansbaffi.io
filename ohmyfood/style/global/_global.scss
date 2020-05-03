@@ -103,3 +103,14 @@ body {
 	@include center();
 	flex-direction: column;
 }
+
+a {
+	text-decoration: none;
+}
+
+header h1 {
+	@include coloring;
+	font-size: 4rem;
+	text-transform: lowercase;
+	letter-spacing: -0.4rem;
+}
