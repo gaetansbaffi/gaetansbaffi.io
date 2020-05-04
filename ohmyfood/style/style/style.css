@@ -262,12 +262,12 @@ header h1 {
   margin-bottom: 10%;
   font-size: 2rem;
   font-family: "Devonshire", cursive, Arial, Helvetica, sans-serif;
-  color: black;
+  color: #3d1319;
 }
 
 .main__menu1 h2 {
   text-transform: uppercase;
-  color: black;
+  color: #3d1319;
   font-size: 2rem;
   font-family: "comic sans ms";
   font-weight: lighter;
@@ -473,11 +473,13 @@ header h1 {
       -ms-flex: 1;
           flex: 1;
   font-family: "Kalam", cursive, Arial, Helvetica, sans-serif;
+  color: #3d1319;
 }
 
 .note__htitle {
   font-family: "uniform-3-regular", Arial, Helvetica, sans-serif;
   text-align: center;
+  color: black;
 }
 
 .note__header {
