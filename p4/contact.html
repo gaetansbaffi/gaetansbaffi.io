@@ -21,7 +21,7 @@
 
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
 		<link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
 
 		<title>La chouette agence | Contact</title>
@@ -82,10 +82,10 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1 class="text-center hero-bloc-text tc-white">
+							<h1 class="text-center hero-bloc-text tc-black">
 								Parlons web design !
 							</h1>
-							<p class="text-center mg-lg tc-white tight-width-whitespace">
+							<p class="text-center mg-lg tc-black tight-width-whitespace">
 								Nous sommes ravis que vous souhaitiez collaborer avec notre
 								agence.<br />
 								Parlez-nous de votre projet en complétant le formulaire
@@ -99,9 +99,9 @@
 
 			<!-- bloc-7 -->
 			<div class="bloc bgc-white l-bloc" id="bloc-7">
-				<div class="container bloc-lg">
+				<section class="container bloc-lg">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-12">
 							<form
 								id="form_1"
 								novalidate
@@ -111,42 +111,44 @@
 								<div class="form-group">
 									<label>
 										Nom
-									</label>
-									<input id="name" class="form-control" required />
+
+										<input id="name" class="form-control" required
+									/></label>
 								</div>
 								<div class="form-group">
 									<label>
 										Adresse email
-									</label>
-									<input
-										id="email"
-										class="form-control"
-										type="email"
-										required
-									/>
+
+										<input
+											id="email"
+											class="form-control"
+											type="email"
+											required
+									/></label>
 								</div>
 								<div class="form-group">
 									<label>
 										Comment nous avez-vous connu ?
-									</label>
-									<input
-										class="form-control"
-										type="email"
-										required
-										id="input_504"
-									/>
+
+										<input
+											class="form-control"
+											type="email"
+											required
+											id="input_504"
+									/></label>
 								</div>
 								<div class="form-group">
 									<label>
 										Brief de votre projet (Ajoutez autant de détails que
-										nécessaire)<br /> </label
-									><textarea
-										id="message"
-										class="form-control"
-										rows="4"
-										cols="50"
-										required
-									></textarea>
+										nécessaire)<br />
+										<textarea
+											id="message"
+											class="form-control"
+											rows="4"
+											cols="50"
+											required
+										></textarea>
+									</label>
 								</div>
 								<button
 									class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
@@ -156,14 +158,14 @@
 								</button>
 							</form>
 						</div>
-						<div class="col-sm-6">
+						<section class="col-sm-12 margin">
 							<p>
 								contact@lachouetteagence.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
 								de 9h à 18h, du lundi au vendredi<br />
 							</p>
-						</div>
+						</section>
 					</div>
-				</div>
+				</section>
 			</div>
 			<!-- bloc-7 END -->
 
@@ -174,38 +176,39 @@
 			<!-- ScrollToTop Button END-->
 
 			<!-- Footer - bloc-8 -->
-			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+			<!-- Footer - bloc-8 -->
+			<footer class="bloc bgc-atomic-tangerine d-bloc footer" id="bloc-8">
 				<div class="container bloc-sm">
 					<div class="row">
 						<div class="col-sm-12">
-							<p class="text-center white">
+							<p class="text-center">
 								La chouette agence - Agence web basée à Lyon.<br />
 							</p>
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"
+										<a class="social" href="index.html" title="twitter"
 											><span class="fa fa-twitter icon-md"></span
 										></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"
+										<a class="social" href="index.html" title="facebook"
 											><span class="fa fa-facebook icon-md"></span
 										></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"
+										<a class="social" href="index.html" title="dribble"
 											><span class="fa fa-dribbble icon-md"></span
 										></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"
+										<a class="social" href="index.html" title="instagram"
 											><span class="fa fa-instagram icon-md"></span
 										></a>
 									</div>
@@ -214,7 +217,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
 			<!-- Footer - bloc-8 END -->
 		</div>
 		<!-- Principal conteneur END -->

@@ -7,6 +7,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.margin {
+	margin-bottom: 10vh;
+	text-align: center;
+}
+
 .contact-button {
 	text-align: center;
 }
@@ -54,6 +59,12 @@ a:hover {
 	-o-background-size: cover;
 	background-size: cover;
 	position: relative;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	margin-top: 5vh;
 }
 
 .bloc .container {
@@ -527,7 +538,9 @@ button {
 	border-color: rgba(0, 0, 0, 0.1);
 	box-shadow: none;
 }
-
+label {
+	width: 100%;
+}
 .scrollToTop {
 	width: 40px;
 	height: 40px;
@@ -537,6 +550,15 @@ button {
 	opacity: 0;
 	z-index: 500;
 	transition: all 0.3s ease-in-out;
+	color: black;
+	background-color: black;
+	border: black 3px solid;
+}
+
+.fa-chevron-up {
+	display: block;
+	width: 3px;
+	color: black;
 }
 
 .scrollToTop span {
@@ -670,7 +692,7 @@ label,
 a {
 	font-family: "helvetica";
 	font-weight: 400;
-	color: #575757 !important;
+	color: black !important;
 }
 
 .container {
@@ -696,7 +718,7 @@ a {
 }
 
 p {
-	font-size: 11px;
+	font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -743,7 +765,7 @@ h3 {
 }
 
 h1 {
-	color: #333333 !important;
+	color: black !important;
 }
 
 h4 {
@@ -843,6 +865,11 @@ h4 {
 
 .bg-presentation {
 	background-image: url("img/image-de-presentation.jpg");
+}
+
+.black,
+.tc-black {
+	color: black;
 }
 
 @media (max-width: 1024px) {
@@ -1030,9 +1057,11 @@ h4 {
 	.voffset-lg {
 		margin-top: 30px;
 	}
-	form {
+	#form_1 {
 		padding: 5px;
+		text-align: center;
 	}
+
 	.close-lightbox {
 		display: inline-block;
 	}
@@ -1053,10 +1082,25 @@ h4 {
 		padding-left: 0;
 		padding-right: 0;
 	}
+	#form_1 {
+		padding: 5px;
+		text-align: center;
+	}
 }
 
 @media (max-width: 767px) {
 	.bloc-mob-center-text {
 		text-align: center;
 	}
+	.width {
+		width: 100%;
+	}
+	#form_1 {
+		padding: 5px;
+		text-align: center;
+	}
+}
+
+#bloc-3-what-i-do p {
+	color: #ffceb6;
 }
