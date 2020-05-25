@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Présentation Projet 4</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav>
+        <h1>Compte rendu du projet 4 de Gaëtan SBAFFI</h1>
+		
+		
+		
+				
+                <ol>
+					<h3>Livrables</h3>
+				<li>
+					<a href="#analyse">l’analyse du SEO utilisant le modèle fourni</a>
+				</li>
+				<li>
+					<a href="#analyse"
+						>une liste de 10 recommandations SEO comprenant des références</a
+					>
+				</li>
+				<li><a href="#code"> le code source complet du site amélioré </a></li>
+				<li>
+					<a href="#rapport"
+						>un rapport d’optimisation comprenant une comparaison des résultats
+						(y compris de la vitesse de chargement et l’accessibilité).</a
+					>
+				</li>
+			</ol>
+		</nav>
+
+		<section id="analyse">
+			<h2>1 + 2 L'analyse du SEO utilisant le modèle fourni et liste des recommandations</h2>
+			<table>
+				<thead>
+					<th>Categorie</th>
+					<th>Problème analysé</th>
+					<th>Bonne pratique à adopter</th>
+					<th>Explication du problème</th>
+					<th>Action recommandée</th>
+					<th>Référence</th>
+				</thead>
+				<tr>
+					<td>SEO / accéssibilité</td>
+					<td>alts des images non cohérents / manque de title</td>
+					<td>
+						Utiliser les alts pour fournir une description de l'image lors d'un
+						problème de non chargement ou utilisation d'une liseuse et utiliser
+						le title pour rajouter un cours texte associé à l'image
+					</td>
+					<td>
+						Les alts ont été utilisés comme réceptacle à mots clés au lieu
+						d'être utilisés pour décrire les images, les titres n'ont pas du
+						tout été utilisés
+					</td>
+					<td>Changer les alts et rajouter des titles cohérents</td>
+					<td>
+						<a
+							href="https://www.w3schools.com/tags/att_img_alt.asp"
+							>https://www.w3schools.com/tags/att_img_alt.asp</a>
+					</td>
+				</tr>
+				<tr>
+					<td>SEO</td>
+					<td>absence du fichier sitemaps et mauvaise indexation</td>
+					<td>
+						ajouter un fichier sitemap.txt afin de faciliter le parcours des
+						robots d'indexations et avoir des noms de pages cohérentes avec leur
+						contenu
+					</td>
+					<td>
+						Le fichier sitemap.txt n'existe pas et la page2.html devrait
+						s'appeler contact.html
+					</td>
+					<td>
+						Créer un fichier sitemap et modifier le nom de la page2 en contact
+					</td>
+					<td>
+						<a
+							href="https://fr.wikipedia.org/wiki/Sitemaps https://support.google.com/webmasters/answer/183668?hl=fr
+                        ">https://fr.wikipedia.org/wiki/Sitemaps
+							https://support.google.com/webmasters/answer/183668?hl=fr
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>SEO</td>
+					<td>Absence d'utilisation de balises sémantiques</td>
+					<td>
+						utiliser les balises sémantiques afin de structurer sa page de
+						manière à respecter les standards de programmation. Cela facilite la
+						lisibilité pour les autres développeurs mais également le parcours
+						des robots de référencements sur notre site
+					</td>
+					<td>
+						Le code HTML est découpé presque exclusivement en div au lieu
+						d'utiliser un header>nav>ul>li / body>section>articles /
+						footer>ul>li
+					</td>
+					<td>Changer les div en balises sémantiques plus cohérentes</td>
+					<td>
+						<a
+							href="http://oseox.fr/referencement/balisage-semantique.html
+                        "
+							>http://oseox.fr/referencement/balisage-semantique.html
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>SEO</td>
+					<td>Utilisation d'images à la place du texte</td>
+					<td>
+						Les images ne doivent pas contenir de texte, car le texte contenu
+						dans l'image ne peut pas être référencé par les robots de
+						réferencement
+					</td>
+					<td>Certaines images sont simplement du texte sur fond blanc</td>
+					<td>
+						Remplacer ces images par du texte réel en respectant la mise en
+						forme présente dans l'image
+					</td>
+					<td>
+						<a
+							href="https://www.anthedesign.fr/referencement/seo-comment-optimiser-le-referencement-des-images/
+                        "
+							>https://www.anthedesign.fr/referencement/seo-comment-optimiser-le-referencement-des-images/
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>SEO</td>
+					<td>mauvaise utilisation des balises meta</td>
+					<td>
+						Avoir une description cohérente et un titre à chaque page, autoriser
+						les robots à parcourir notre site via la meta balise robots
+					</td>
+					<td>pas de meta robots</td>
+					<td>
+						ajout de la balise meta robots afin d'autoriser le référencement de
+						l'ensemble du site
+					</td>
+					<td>
+						<a
+							href="https://www.seo.fr/definition/meta-robots
+                        "
+							>https://www.seo.fr/definition/meta-robots
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>SEO</td>
+					<td>Balise meta title vide</td>
+					<td>
+						Il faut que la balise meta title représente le site de manière
+						concise et précise
+					</td>
+					<td>la balise title est vide</td>
+					<td>Ajout d'un titre cohérent</td>
+					<td>
+						<a
+							href="https://www.referenseo.com/guide-seo/balise-title/
+                        "
+							>https://www.referenseo.com/guide-seo/balise-title/
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>SEO</td>
+					<td>balise meta description non optimale</td>
+					<td>
+						il faut Avoir une description cohérente afin d'optimiser le
+						référencement du site
+					</td>
+					<td>La balise description est vide</td>
+					<td>ajout d'une description cohérente</td>
+                    <td><a href="https://www.wearethewords.com/conseils-seo-meta-description/">
+                        https://www.wearethewords.com/conseils-seo-meta-description/</a>
+                        </td>
+				</tr>
+				<tr>
+					<td>SEO</td>
+					<td>Pratique "black hat" de SEO</td>
+					<td>Ne pas cacher des mots clés invisible dans la page</td>
+					<td>
+						Des "keywords" sont disséminés dans l'ensemble résultant, dans le
+						but de surcharger les robots pour un meilleur référencement. Cette
+						pratique est dangereuse et risque d'annuler le réferencement.
+					</td>
+					<td>Retirer l'ensemble des ces "keywords" invisibles</td>
+					<td>
+						<a href="https://www.codeur.com/blog/black-hat-seo/"
+							>https://www.codeur.com/blog/black-hat-seo/</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Accéssibilité</td>
+					<td>chargement trop long du site</td>
+					<td>
+						Utiliser une technique de minification afin d'améliorer la rapidité
+						de chargement
+					</td>
+					<td>
+						Le fichier bootstrap.css et le fichier jquery.js ne sont pas
+						minifier
+					</td>
+					<td>
+						Utiliser un minifier afin d'améliorer le chargement de la page.
+					</td>
+					<td>
+						<a
+							href="https://www.hostinger.fr/tutoriels/minification/
+                        "
+							>https://www.hostinger.fr/tutoriels/minification/
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Accéssibilité</td>
+					<td>Format des images non idéal</td>
+					<td>
+						utiliser le format jpg pour les photos et png pour les illustrations
+					</td>
+					<td>
+						Les images du site ont des formats qui ne sont pas idéals par
+						rapport aux standards du web (BPM devrait être jpg)
+					</td>
+					<td>Reformatage des images bmp au format jpg</td>
+					<td>
+						<a
+							href="https://www.jimdo.com/fr/2015/07/20/7-conseils-de-pro-pour-optimiser-vos-images/"
+							>https://www.jimdo.com/fr/2015/07/20/7-conseils-de-pro-pour-optimiser-vos-images/</a
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Accéssibilité</td>
+					<td>Temps de chargement trop long</td>
+					<td>
+						Redimmensionner les images à la taille à laquelle elles vont
+						s'afficher et les compresser si nécessaire
+					</td>
+					<td>
+						Certaines images sont surdimensionnées par rapport à leur affichage
+						sur le site et/ou ne sont pas compressées
+					</td>
+					<td>
+						Réduire la taille et le poids des images afin d'améliorer la
+						rapidité de chargement du site
+					</td>
+					<td>
+						<a
+							href="https://www.jimdo.com/fr/2015/07/20/7-conseils-de-pro-pour-optimiser-vos-images/
+                        "
+							>https://www.jimdo.com/fr/2015/07/20/7-conseils-de-pro-pour-optimiser-vos-images/
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Accéssibilité</td>
+					<td>
+						des éléments pouvant recevoir le focus n'ont pas de style associé
+					</td>
+					<td>
+						Ajouter un style lors du focus sur les différents boutons afin de
+						permettre une meilleure navigation pour les personnes n'utilisant
+						pas de souris
+					</td>
+					<td>Les liens n'ont pas de styles associés à l'élements focus</td>
+					<td>Rajouter un style (cadre visible) aux liens lors du :focus</td>
+					<td>
+						<a
+							href="https://hacks.mozilla.org/2019/06/indicating-focus-to-improve-accessibility/
+                        "
+						>
+							https://hacks.mozilla.org/2019/06/indicating-focus-to-improve-accessibility/
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Accéssibilité</td>
+					<td>
+						Difficulté à lire différents éléments de la page, nottament sur les
+						textes orange
+					</td>
+					<td>
+						Viser une certification AAA sur l'ensemble du site avec l'outil
+						d'accéssibilité contraste de firefox
+					</td>
+					<td>
+						Le choix des couleurs des textes orange n'est pas ad adapté aux
+						images d'arrière plan
+					</td>
+					<td>
+						Changer les images d'arrières plan ou la couleur du texte (nous
+						changerons ici la couleur du texte)
+					</td>
+					<td>
+						<a
+							href="https://developer.mozilla.org/fr/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Contraste_de_la_couleur
+                        "
+						>
+							https://developer.mozilla.org/fr/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Contraste_de_la_couleur
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Accéssibilité
+                    </td>
+					<td>balises script à mettre en bas du body
+                    </td>
+					<td>placer les scripts de chargement en bas de la page afin de faciliter le chargement de la page pour les utilisateurs avec une faible connexion
+                    </td>
+					<td>les scripts étaient placés dans le <head>
+                    </td>
+					<td>Placer les scripts en bas de la balise body
+                    </td>
+					<td><a href="https://web.developpez.com/actu/81263/Comprendre-la-balise-script-syntaxe-contenu-et-placement-dans-le-document/
+                        ">https://web.developpez.com/actu/81263/Comprendre-la-balise-script-syntaxe-contenu-et-placement-dans-le-document/
+                    </a></td>
+				</tr>
+			</table>
+        </section>
+        <section
+        id="code">
+            <h2>3. Le code source complet du site amélioré</h2>
+            <p>Le code source complet se trouve sur mon github à l'adresse suivante: <br><a href="https://github.com/gaetansbaffi/gaetansbaffi.github.io/tree/master/p4">
+                https://github.com/gaetansbaffi/gaetansbaffi.github.io/tree/master/p4</a></p>
+        </section>
+<section id="rapport">
+	<h2>4. un rapport d’optimisation comprenant une comparaison des résultats (y compris de la vitesse de chargement et l’accessibilité).</h2>
+	
+	<a href="./before.html"><div>Rapport d'audit chrome avant optimisation : page index</div></a>
+<img src="./img/before.PNG" alt="">
+<a href="./after.html"><div>Rapport d'audit chrome après optimisation: page index</div></a>
+<img src="./img/after.PNG" alt="">
+<a href="./contact-before.html"><div>Rapport d'audit chrome avant optimisation : page contact</div></a>
+<img src="./img/contact-before.PNG" alt="">
+<a href="./contact-after.html"><div>Rapport d'audit chrome après optimisation: page contact</div></a>
+<img src="./img/contact-after.PNG" alt="">
+
+</section>
+	</body>
+</html>
