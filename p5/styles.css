@@ -102,7 +102,9 @@ body {
 
 .products {
 	padding: 4rem 0;
+	text-align: center;
 }
+
 .section-title h2 {
 	text-align: center;
 	font-size: 2.5rem;
@@ -137,6 +139,18 @@ body {
 	transform: translateX(101%);
 	cursor: pointer;
 }
+
+.more-btn {
+	background: var(--primaryColor);
+	border: none;
+	text-transform: uppercase;
+	padding: 0.5rem 0.75rem;
+	letter-spacing: var(--mainSpacing);
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
 .bag-btn:hover {
 	color: var(--mainWhite);
 }

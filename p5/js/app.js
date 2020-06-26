@@ -9,7 +9,7 @@ const cartItems = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
-
+const api = "https://oc-p5-api.herokuapp.com/api/teddies";
 // cart
 let cart = [];
 
@@ -19,9 +19,9 @@ let buttonsDOM = [];
 
 // getting the products
 class Products {
-	async getProducts() {
+	async getProducts(api) {
 		try {
-			let result = await fetch("http://localhost:3000/api/teddies");
+			let result = await fetch(api);
 			let data = await result.json();
 			let products = data;
 
@@ -31,7 +31,6 @@ class Products {
 				const id = item._id;
 				const image = item.imageUrl;
 				const description = item.description;
-				console.log(name, price, id, description);
 				return { name, price, id, image, description };
 			});
 
@@ -61,8 +60,8 @@ class UI {
                     </button>
 				</div>
 				<h3>${product.name}</h3>
-				<p>${product.description}</p>
-                <h4>$${product.price}</h4>
+				<h4>$${product.price}</h4>
+				<button class="more-btn">Plus d'informations</button>
                
             </article>
             <!-- end of single product -->
@@ -71,12 +70,23 @@ class UI {
 		});
 		productsDOM.innerHTML = result;
 	}
+	MoreInfo() {
+		const moreBtns = document.querySelectorAll(".more-btn");
+		moreBtns.forEach((button) => {
+			let id = button.parentElement.children[0].children[1].dataset.id;
+			button.addEventListener("click", (event) => {
+				var newWin = window.open("produit.html");
+				localStorage.setItem("id", id);
+				console.log(api + "/" + id);
+			});
+		});
+	}
 	getBagButtons() {
 		const buttons = [...document.querySelectorAll(".bag-btn")];
 		buttonsDOM = buttons;
 		buttons.forEach((button) => {
 			let id = button.dataset.id;
-			let inCart = cart.find((item) => item.idd === id);
+			let inCart = cart.find((item) => item.id === id);
 			if (inCart) {
 				button.innerText = "Dans le panier";
 				button.disabled = true;
@@ -232,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	ui.setupAPP();
 	//get all products
 	products
-		.getProducts()
+		.getProducts(api)
 		.then((products) => {
 			ui.displayProducts(products);
 			Storage.saveProducts(products);
@@ -240,5 +250,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		.then(() => {
 			ui.getBagButtons();
 			ui.cartLogic();
+			ui.MoreInfo();
 		});
 });
