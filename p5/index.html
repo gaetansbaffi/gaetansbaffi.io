@@ -3,27 +3,83 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TeddyCity, votre fournisseur d'ours en peluche</title>
+		<title>Comfy house</title>
+		<!-- font awesome -->
 		<script
 			src="https://kit.fontawesome.com/9c9e3e31e7.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" href="./css/style.css" />
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<header>
-			<nav>
-				<i class="fas fa-baby fa-2x"></i>
-				<h1>TeddyCity</h1>
-				<ul>
-					<li><a class="navBtn" href="./index.html">Produits</a></li>
-					<li><a class="navBtn" href="./index.html">Contact</a></li>
-					<li><a class="navBtn" href="./basket.html">Panier</a></li>
-				</ul>
-			</nav>
+		<!-- navbar -->
+		<nav class="navbar">
+			<div class="navbar-center">
+				<span class="nav-icon">
+					<i class="fas fa-bars"></i>
+				</span>
+				<div>
+					<img src="./images/logo.PNG" alt="store logo" class="nav-logo" />
+				</div>
+				<div class="cart-btn">
+					<span class="nav-icon">
+						<i class="fas fa-cart-plus"></i>
+					</span>
+					<div class="cart-items">0</div>
+				</div>
+			</div>
+		</nav>
+		<!-- end of navbar -->
+		<!-- hero -->
+		<header class="hero">
+			<div class="banner">
+				<h1 class="banner-title">Nos ours en peluche</h1>
+				<button class="banner-btn">Acheter maintenant</button>
+			</div>
 		</header>
-		<main></main>
-		<script src="./js/liste.js"></script>
-		<script src="./js/product.js"></script>
+		<!-- end of hero -->
+		<!-- products -->
+		<section class="products">
+			<div class="section-title">
+				<h2>Nos ours en peluche</h2>
+			</div>
+			<div class="products-center">
+				<!-- single product -->
+				<!-- <article class="product">
+					<div class="img-container">
+						<img
+							src="./images/product-1.jpeg"
+							alt="product"
+							class="product-img"
+						/>
+						<button class="bag-btn" data-id="1">
+							<i class="fas fa-shopping-cart"></i>add to bag
+						</button>
+					</div>
+					<h3>queen bed</h3>
+					<h4>$60</h4>
+				</article> -->
+				<!-- end of single product -->
+			</div>
+		</section>
+		<!-- end of products -->
+		<!-- cart -->
+		<div class="cart-overlay">
+			<div class="cart">
+				<span class="close-cart">
+					<div class="fas fa-window-close"></div>
+				</span>
+				<h2>Votre panier</h2>
+				<div class="cart-content"></div>
+				<div class="cart-footer">
+					<h3>Votre total : € <span class="cart-total">0</span></h3>
+					<button class="clear-cart banner-btn">Vider le panier</button>
+				</div>
+			</div>
+		</div>
+		<!-- end of cart -->
+		<script src="js/app.js"></script>
 	</body>
 </html>
