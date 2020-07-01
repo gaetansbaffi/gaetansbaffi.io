@@ -160,7 +160,7 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 	color: black;
-	margin: 10rem;
+	margin: auto;
 }
 
 .bag-btn:hover {
@@ -193,14 +193,25 @@ body {
 }
 
 .single-product {
-	border: black solid 1px;
+	border: rgba(0, 0, 0, 0.6) solid 5px;
+	border-radius: 2rem;
+	width: 90%;
 	max-width: 1124px;
 	margin: 0 auto;
 	padding: 3rem;
+	margin: 1rem auto;
+
+	align-items: center;
 }
 
+.single-product p,
+.single-product h3 {
+	padding: 0.4rem;
+	width: 50%;
+	margin: auto;
+}
 .single-product h4 {
-	padding: 1rem;
+	padding: 0.4rem 0 1rem 0;
 }
 
 .product h3 {
