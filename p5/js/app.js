@@ -60,7 +60,7 @@ class UI {
                     </button>
 				</div>
 				<h3>${product.name}</h3>
-				<h4>$${product.price}</h4>
+				<h4>${product.price / 100}.00€</h4>
 				<button class="more-btn">Plus d'informations</button>
                
             </article>
@@ -75,7 +75,7 @@ class UI {
 		moreBtns.forEach((button) => {
 			let id = button.parentElement.children[0].children[1].dataset.id;
 			button.addEventListener("click", (event) => {
-				var newWin = window.open("produit.html");
+				var newWin = window.open("produit.html", "_self");
 				localStorage.setItem("id", id);
 				console.log(api + "/" + id);
 			});
@@ -116,7 +116,7 @@ class UI {
 		let itemsTotal = 0;
 
 		cart.map((item) => {
-			tempTotal += item.price * item.amount;
+			tempTotal += (item.price / 100) * item.amount;
 			itemsTotal += item.amount;
 		});
 		cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
@@ -129,7 +129,7 @@ class UI {
 		<img src="${item.image}" alt="product" />
 						<div>
 							<h4>${item.name}</h4>
-							<h5>$${item.price}</h5>
+							<h5>${item.price / 100}.00€</h5>
 							<span class="remove-item" data-id=${item.id}>remove</span>
 						</div>
 						<div>

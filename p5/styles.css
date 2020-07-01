@@ -103,6 +103,7 @@ body {
 .products {
 	padding: 4rem 0;
 	text-align: center;
+	min-height: calc(100vh - 60px);
 }
 
 .section-title h2 {
@@ -147,8 +148,19 @@ body {
 	padding: 0.5rem 0.75rem;
 	letter-spacing: var(--mainSpacing);
 	font-weight: bold;
-
 	cursor: pointer;
+}
+
+.back-btn {
+	background: var(--primaryColor);
+	text-transform: uppercase;
+	padding: 0.5rem 0.75rem;
+	letter-spacing: var(--mainSpacing);
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+	margin: 10rem;
 }
 
 .bag-btn:hover {
@@ -166,8 +178,29 @@ body {
 	min-height: 12rem;
 	transition: var(--mainTransition);
 }
+
+.single-product-img {
+	display: block;
+	width: 80%;
+	max-width: 1124px;
+	min-height: 12rem;
+	transition: var(--mainTransition);
+	margin: 3rem auto;
+}
+
 .img-container:hover .product-img {
 	opacity: 0.5;
+}
+
+.single-product {
+	border: black solid 1px;
+	max-width: 1124px;
+	margin: 0 auto;
+	padding: 3rem;
+}
+
+.single-product h4 {
+	padding: 1rem;
 }
 
 .product h3 {

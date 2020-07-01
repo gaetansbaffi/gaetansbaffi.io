@@ -27,21 +27,22 @@ async function getProduct(api) {
 	const products = document.querySelector(".products");
 	console.log(data.imageUrl);
 	// console.log(product.name);
-	products.innerHtml = `
+	products.innerHTML = `
             <!-- single product -->
-            <article class="product">
+            <article class="single-product">
                 <div class="img-container">
                     <img
                         src="${data.imageUrl}"
                         alt="product"
-                        class="product-img"
+                        class="single-product-img"
                     />
                     
 				</div>
                 <h3>${data.name}</h3>
                 <p>${data.description}</p>
-				<h4>$${data.price}</h4>
-				<button class="more-btn">Plus d'informations</button>
+                <h4>${data.price / 100}.00€</h4>
+                <a href="./index.html" class="back-btn">Retour à la page d'accueil</a>
+			
                
             </article>
             <!-- end of single product -->
@@ -51,10 +52,4 @@ async function getProduct(api) {
 	console.log(data);
 }
 
-// getProduct("http://localhost:3000/api/teddies/5beaa8bf1c9d440000a57d94");
-
-async function fetchProduct() {
-	await getProduct(productUrl);
-}
-
-fetchProduct();
+getProduct(productUrl);
