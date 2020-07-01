@@ -41,7 +41,7 @@ async function getProduct(api) {
                 <h3>${data.name}</h3>
                 <p>${data.description}</p>
                 <h4>${data.price / 100}.00€</h4>
-                <a href="./index.html" class="back-btn">Retour à la page d'accueil</a>
+                <a href="./index.html#products" class="back-btn">Retour à la page d'accueil</a>
 			
                
             </article>
