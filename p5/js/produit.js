@@ -1,6 +1,5 @@
 const productUrl =
 	"http://localhost:3000/api/teddies/" + localStorage.getItem("id");
-const product = document.querySelector(".products");
 
 async function getProduct(api) {
 	// try {
@@ -21,12 +20,14 @@ async function getProduct(api) {
 	// } catch (error) {
 	// 	console.log(error);
 	// }
-
+	console.log(api);
 	let result = await fetch(api);
 	let data = await result.json();
-	let product = data;
-
-	product.innerHtml = `
+	// let product = data;
+	const products = document.querySelector(".products");
+	console.log(data.imageUrl);
+	// console.log(product.name);
+	products.innerHtml = `
             <!-- single product -->
             <article class="product">
                 <div class="img-container">
@@ -37,9 +38,9 @@ async function getProduct(api) {
                     />
                     
 				</div>
-                <h3>${product.name}</h3>
+                <h3>${data.name}</h3>
                 <p>${data.description}</p>
-				<h4>$${product.price}</h4>
+				<h4>$${data.price}</h4>
 				<button class="more-btn">Plus d'informations</button>
                
             </article>
@@ -47,7 +48,13 @@ async function getProduct(api) {
             
             `;
 
-	console.log(data._id);
+	console.log(data);
 }
 
-getProduct("http://localhost:3000/api/teddies/5beaa8bf1c9d440000a57d94");
+// getProduct("http://localhost:3000/api/teddies/5beaa8bf1c9d440000a57d94");
+
+async function fetchProduct() {
+	await getProduct(productUrl);
+}
+
+fetchProduct();
