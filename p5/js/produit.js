@@ -1,5 +1,5 @@
 const productUrl =
-	"http://localhost:3000/api/teddies/" + localStorage.getItem("id");
+	"https://oc-p5-api.herokuapp.com/api/teddies/" + localStorage.getItem("id");
 
 async function getProduct(api) {
 	// try {
