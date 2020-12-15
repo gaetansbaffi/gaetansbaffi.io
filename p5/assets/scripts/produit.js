@@ -58,7 +58,7 @@ const addToCart = () => {
 
 		saveCart();
 		displayCount();
-		document.location.href = "/";
+		document.location.href = "/index.html";
 	});
 };
 
