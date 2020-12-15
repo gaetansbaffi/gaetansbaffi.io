@@ -96,7 +96,8 @@ a {
 #delete-cart,
 .remove,
 .more-info,
-.add-basket {
+.add-basket,
+.backHome {
 	border: black 1px;
 	background-color: lightblue;
 	border-radius: 2rem;
