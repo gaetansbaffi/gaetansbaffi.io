@@ -169,7 +169,7 @@ try {
 		let contact = object;
 		let order = { contact, products };
 
-		fetch("http://localhost:3000/api/teddies/order", {
+		fetch(url + "order", {
 			method: "POST",
 			headers: { "content-type": "application/json" },
 			body: JSON.stringify(order),
