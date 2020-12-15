@@ -5,9 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>orinoco</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+			</style>
 		<link rel="stylesheet" href="assets/styles/app.css" />
 
 		<script src="assets/scripts/app.js" defer></script>
+		<script src="assets/scripts/common.js" defer></script>
+		<script src="assets/scripts/panier.js" defer></script>
 	</head>
 	<body>
 		<nav>
@@ -19,23 +24,35 @@
 		<table>
 			<thead>
 				<td>Nom</td>
+				<td>couleur</td>
 				<td>prix unitaire</td>
 				<td>Quantité</td>
 				<td>Total</td>
+				<td>supprimer l'article</td>
 			</thead>
 		</table>
 		<form class="form" id="myForm">
-			<label for="name">Prénom</label>
-			<input type="text" name="name" id="name" required />
-			<label for="lastName">Nom</label>
-			<input type="text" name="lastName" id="lastName" required />
-			<label for="adress">Adresse</label>
-			<input type="text" name="adress" id="adress" required />
-			<label for="city">Ville</label>
-			<input type="text" name="city" id="city" required />
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" required />
-			<button type="submit">Passer commande</button>
+			<label id="firstName">
+				<input type="text" name="firstName" placeholder="Prénom" required
+			/></label>
+
+			<label id="lastName">
+				<input type="text" name="lastName" placeholder="Nom" required />
+			</label>
+
+			<label id="address">
+				<input type="text" name="address" placeholder="Adresse" required
+			/></label>
+
+			<label id="city">
+				<input type="text" name="city" placeholder="Ville" required
+			/></label>
+
+			<label id="email">
+				<input type="email" name="email" placeholder="Email" required
+			/></label>
+
+			<input value="Passer commande" name="submit" type="submit"></input>
 		</form>
 	</body>
 </html>
