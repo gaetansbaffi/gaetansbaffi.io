@@ -1,33 +1,33 @@
 /* kanit-regular - latin */
 @font-face {
-	font-family: "Kanit";
+	font-family: 'Kanit';
 	font-style: normal;
 	font-weight: 400;
-	src: url("fonts/kanit-v5-latin-regular.eot"); /* IE9 Compat Modes */
-	src: local("Kanit Regular"), local("Kanit-Regular"),
-		url("fonts/kanit-v5-latin-regular.eot?#iefix") format("embedded-opentype"),
-		/* IE6-IE8 */ url("fonts/kanit-v5-latin-regular.woff2") format("woff2"),
-		/* Super Modern Browsers */ url("fonts/kanit-v5-latin-regular.woff")
-			format("woff"),
-		/* Modern Browsers */ url("fonts/kanit-v5-latin-regular.ttf")
-			format("truetype"),
-		/* Safari, Android, iOS */ url("fonts/kanit-v5-latin-regular.svg#Kanit")
-			format("svg"); /* Legacy iOS */
+	src: url('fonts/kanit-v5-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Kanit Regular'), local('Kanit-Regular'),
+		url('fonts/kanit-v5-latin-regular.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */ url('fonts/kanit-v5-latin-regular.woff2') format('woff2'),
+		/* Super Modern Browsers */ url('fonts/kanit-v5-latin-regular.woff')
+			format('woff'),
+		/* Modern Browsers */ url('fonts/kanit-v5-latin-regular.ttf')
+			format('truetype'),
+		/* Safari, Android, iOS */ url('fonts/kanit-v5-latin-regular.svg#Kanit')
+			format('svg'); /* Legacy iOS */
 }
 /* kanit-600 - latin */
 @font-face {
-	font-family: "Kanit-600";
+	font-family: 'Kanit-600';
 	font-style: normal;
 	font-weight: 600;
-	src: url("fonts/kanit-v5-latin-600.eot"); /* IE9 Compat Modes */
-	src: local("Kanit SemiBold"), local("Kanit-SemiBold"),
-		url("fonts/kanit-v5-latin-600.eot?#iefix") format("embedded-opentype"),
-		/* IE6-IE8 */ url("fonts/kanit-v5-latin-600.woff2") format("woff2"),
-		/* Super Modern Browsers */ url("fonts/kanit-v5-latin-600.woff")
-			format("woff"),
-		/* Modern Browsers */ url("fonts/kanit-v5-latin-600.ttf") format("truetype"),
-		/* Safari, Android, iOS */ url("fonts/kanit-v5-latin-600.svg#Kanit")
-			format("svg"); /* Legacy iOS */
+	src: url('fonts/kanit-v5-latin-600.eot'); /* IE9 Compat Modes */
+	src: local('Kanit SemiBold'), local('Kanit-SemiBold'),
+		url('fonts/kanit-v5-latin-600.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */ url('fonts/kanit-v5-latin-600.woff2') format('woff2'),
+		/* Super Modern Browsers */ url('fonts/kanit-v5-latin-600.woff')
+			format('woff'),
+		/* Modern Browsers */ url('fonts/kanit-v5-latin-600.ttf') format('truetype'),
+		/* Safari, Android, iOS */ url('fonts/kanit-v5-latin-600.svg#Kanit')
+			format('svg'); /* Legacy iOS */
 }
 
 #bloc_page {
@@ -37,11 +37,11 @@
 	text-align: justify;
 	margin: auto;
 	border: 1px black solid;
-	font-family: "Kanit";
+	font-family: 'Kanit';
 }
 
 .bold {
-	font-family: "Kanit-600";
+	font-family: 'Kanit-600';
 	font-weight: bolder;
 }
 
@@ -68,14 +68,14 @@ section header {
 
 section header h1 {
 	font-size: 3em;
-	font-family: "Kanit-600";
+	font-family: 'Kanit-600';
 	margin-bottom: 5px;
 	color: #ffba1a;
 }
 
 section header h2 {
 	font-size: 2em;
-	font-family: "Kanit-600";
+	font-family: 'Kanit-600';
 	margin-top: 5px;
 	border-bottom: #ffba1a solid;
 }
@@ -151,6 +151,13 @@ section h1 i {
 }
 
 /*!!!!!ASIDE!!!!!*/
+
+.skills-list {
+	display: flex;
+	flex-direction: column;
+	padding: 0 10%;
+	font-size: 20px;
+}
 
 aside img {
 	border-radius: 50%;
