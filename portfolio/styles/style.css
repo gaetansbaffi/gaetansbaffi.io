@@ -316,7 +316,9 @@ nav ul {
 
 .travelly,
 .photo,
-.ohmyfood {
+.ohmyfood,
+.piquante,
+.groupomania {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
