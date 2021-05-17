@@ -91,3 +91,20 @@ h4 {
 	text-align: center;
 	width: 100%;
 }
+
+@media screen and (max-width: 783px) {
+	nav ul {
+		padding: 0;
+	}
+
+	li {
+		padding: 0px;
+	}
+
+	.poke-container {
+		width: 90%;
+	}
+	.pokemon {
+		width: 40%;
+	}
+}

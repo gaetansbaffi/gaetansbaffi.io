@@ -102,3 +102,20 @@ nav ul li {
 	margin-top: 20px;
 	max-width: 90%;
 }
+
+@media screen and (max-width: 783px) {
+	nav ul {
+		padding: 0;
+	}
+
+	li {
+		padding: 0px;
+	}
+
+	.poke-container {
+		width: 100%;
+	}
+	.pokemon {
+		width: 44%;
+	}
+}

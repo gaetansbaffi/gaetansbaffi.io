@@ -1,15 +1,13 @@
 const poke_container = document.getElementById('poke_container');
 const pokemons_number = 150;
-const pokemons = [];
+const pokemons = JSON.parse(sessionStorage.getItem('pokemons'));
+const found = false;
 
 const fetchPokemons = async () => {
 	const randomPokemons = [];
 	const pokemonsDisplayed = 4;
-	for (let i = 1; i <= pokemons_number; i++) {
-		await getPokemon(i);
-	}
 
-	while (randomPokemons.length < 4) {
+	while (randomPokemons.length < pokemonsDisplayed) {
 		var item = pokemons[Math.floor(Math.random() * pokemons.length)];
 		if (!randomPokemons.find((pokemon) => pokemon.id == item.id)) {
 			randomPokemons.push(item);
@@ -31,14 +29,8 @@ const createPokemonCard = (pokemon) => {
 
 	pokemonElement.innerHTML = pokeInnerHTML;
 	poke_container.appendChild(pokemonElement);
-	pokemonElement.addEventListener('click', () => capturePokemon(name));
-};
-
-const getPokemon = async (id) => {
-	const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-	const res = await fetch(url);
-	const pokemon = await res.json();
-	pokemons.push({ id: pokemon.id, name: pokemon.name });
+	const pokeHandler = () => capturePokemon(name, pokemon.id);
+	pokemonElement.addEventListener('click', pokeHandler);
 };
 
 const addPokemonTofind = (arr) => {
@@ -47,19 +39,28 @@ const addPokemonTofind = (arr) => {
 	const helper = document.createElement('h4');
 	pokemonToFindEl.classList.add(pokemonToFind, 'tofind');
 	pokemonToFindEl.innerHTML = `Capture ${pokemonToFind} !`;
-
 	poke_container.appendChild(pokemonToFindEl);
 	poke_container.appendChild(helper);
 };
 
-const capturePokemon = (name) => {
+const reset = (id) => {
+	const pokemonsImgs = document.querySelectorAll('img');
+	url = `https://pokeres.bastionbot.org/images/pokemon/${id}.png`;
+
+	pokemonsImgs.forEach((img) => (img.src = url));
+};
+
+const capturePokemon = (name, id) => {
 	const pokemonToFind = document.querySelector('.tofind');
 	const helper = document.querySelector('h4');
 
 	if (name.toLowerCase() == pokemonToFind.classList[0]) {
 		helper.addEventListener('click', () => location.reload());
 		helper.style.cursor = 'pointer';
+		helper.style.color = 'green';
 		helper.innerHTML = `Well done ! Click here to try again!`;
+
+		reset(id);
 	} else {
 		helper.innerHTML = `No that was ${name}`;
 	}

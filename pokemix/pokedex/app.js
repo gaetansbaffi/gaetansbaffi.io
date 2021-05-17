@@ -1,5 +1,7 @@
 const poke_container = document.getElementById('poke_container');
 const pokemons_number = 150;
+const pokemons = JSON.parse(sessionStorage.getItem('pokemons'));
+
 const colors = {
 	fire: '#FDDFDF',
 	grass: '#DEFDE0',
@@ -26,9 +28,7 @@ const fetchPokemons = async () => {
 };
 
 const getPokemon = async (id) => {
-	const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-	const res = await fetch(url);
-	const pokemon = await res.json();
+	const pokemon = pokemons.find((pokemon) => pokemon.id === id);
 	createPokemonCard(pokemon);
 };
 
