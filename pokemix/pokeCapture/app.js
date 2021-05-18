@@ -18,9 +18,10 @@ const fetchPokemons = async () => {
 };
 
 const createPokemonCard = (pokemon) => {
+	console.log(pokemon);
 	const pokemonElement = document.createElement('div');
 	pokemonElement.classList.add(`pokemon`, pokemon.name);
-	const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
+	const name = capitalize(pokemon.name);
 	const pokeInnerHTML = `
     <div class='img-container '>
      <img src='https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png'/>
@@ -29,8 +30,9 @@ const createPokemonCard = (pokemon) => {
 
 	pokemonElement.innerHTML = pokeInnerHTML;
 	poke_container.appendChild(pokemonElement);
-	const pokeHandler = () => capturePokemon(name, pokemon.id);
-	pokemonElement.addEventListener('click', pokeHandler);
+	pokemonElement.addEventListener('click', () =>
+		capturePokemon(name, pokemon.id)
+	);
 };
 
 const addPokemonTofind = (arr) => {
@@ -43,27 +45,44 @@ const addPokemonTofind = (arr) => {
 	poke_container.appendChild(helper);
 };
 
-const reset = (id) => {
-	const pokemonsImgs = document.querySelectorAll('img');
-	url = `https://pokeres.bastionbot.org/images/pokemon/${id}.png`;
-
-	pokemonsImgs.forEach((img) => (img.src = url));
-};
-
 const capturePokemon = (name, id) => {
 	const pokemonToFind = document.querySelector('.tofind');
+	const pokemonDivs = document.querySelectorAll('.pokemon');
 	const helper = document.querySelector('h4');
+	const capturedPokemon = pokemons.filter((pokemon) => {
+		return pokemon.name === name.toLowerCase();
+	});
+	console.log(capturedPokemon[0]);
 
 	if (name.toLowerCase() == pokemonToFind.classList[0]) {
+		//remove all pokemons
+		pokemonDivs.forEach((element) =>
+			element.parentElement.removeChild(element)
+		);
+		pokemonToFind.parentElement.removeChild(pokemonToFind);
+		//create the card of the pokemon found
+		createPokemonCard(capturedPokemon[0]);
+		const foundDiv = document.querySelector('.pokemon');
+		const foundName = document.createElement('h3');
+		const foundId = document.createElement('p');
+		foundDiv.append(foundId);
+		foundDiv.append(foundName);
+		foundName.textContent = name;
+		foundId.textContent = '#' + id;
+		foundDiv.querySelector('h3').textContent = name;
+
+		//click to try again
 		helper.addEventListener('click', () => location.reload());
 		helper.style.cursor = 'pointer';
 		helper.style.color = 'green';
 		helper.innerHTML = `Well done ! Click here to try again!`;
-
-		reset(id);
 	} else {
 		helper.innerHTML = `No that was ${name}`;
 	}
 };
+
+function capitalize(s) {
+	return s[0].toUpperCase() + s.slice(1);
+}
 
 fetchPokemons();
